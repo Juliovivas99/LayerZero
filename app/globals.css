@@ -14,6 +14,7 @@ body {
   font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
 }
 
 ::selection {
@@ -194,6 +195,28 @@ html {
   background: #3f3f46;
 }
 
+/* Mobile-specific optimizations */
+@media (max-width: 768px) {
+  /* Reduce motion for better mobile performance */
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+  
+  /* Ensure full-width layouts on mobile */
+  body {
+    overflow-x: hidden;
+  }
+  
+  /* Better input sizing for mobile */
+  input, select, textarea, button {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+}
+
 /* Terminal Typing Effect */
 .typing-cursor::after {
   content: '▋';
@@ -209,4 +232,12 @@ html {
 .stroke-text {
   -webkit-text-stroke: 2px #F3F1ED;
   color: transparent;
+}
+
+/* Touch-friendly utility classes */
+.touch-manipulation {
+  touch-action: manipulation;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
 }

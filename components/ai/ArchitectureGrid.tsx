@@ -1,22 +1,22 @@
 export default function ArchitectureGrid() {
   return (
-    <section id="architecture" className="py-24 px-6 md:px-12 bg-[#F3F1ED]">
+    <section id="architecture" className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 md:px-12 bg-[#F3F1ED]">
       <div className="max-w-[1920px] mx-auto">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-12">
+        <div className="flex flex-col md:flex-row justify-between items-end mb-8 sm:mb-12">
           <div>
-            <h2 className="text-5xl md:text-7xl font-bold tracking-tighter mb-4 leading-[0.9]">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter mb-3 sm:mb-4 leading-[0.9]">
               Core<br />Architecture
             </h2>
-            <p className="text-xl leading-relaxed max-w-md text-[#0A0A0A]">
+            <p className="text-base sm:text-lg md:text-xl leading-relaxed max-w-md text-[#0A0A0A]">
               We replace fragile, manual SOPs with robust, code-based agents. Choose your modules.
             </p>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 auto-rows-[300px]">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 auto-rows-[280px] sm:auto-rows-[300px]">
         
         {/* Card 1: Growth */}
-        <div className="group relative bg-white border-2 border-black p-8 flex flex-col justify-between overflow-hidden hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all cursor-pointer">
+        <div className="group relative bg-white border-2 border-black p-6 sm:p-8 flex flex-col justify-between overflow-hidden hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all cursor-pointer">
           <div className="absolute top-0 right-0 p-3 opacity-5 group-hover:opacity-10 transition-opacity">
             <iconify-icon icon="solar:graph-new-up-linear" width="100"></iconify-icon>
           </div>
@@ -40,7 +40,7 @@ export default function ArchitectureGrid() {
         </div>
 
         {/* Card 2: Ops (Featured - Large) */}
-        <div className="md:col-span-2 group relative bg-[#0A0A0A] border-2 border-black p-8 flex flex-col justify-between overflow-hidden hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all cursor-pointer">
+        <div className="md:col-span-2 group relative bg-[#0A0A0A] border-2 border-black p-6 sm:p-8 flex flex-col justify-between overflow-hidden hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all cursor-pointer">
           {/* Visual Background Element */}
           <div className="absolute inset-y-0 right-0 w-1/2 mask-sides opacity-10 hidden md:block">
             <div className="space-y-2 font-mono text-[10px] text-white/50 pt-8">
@@ -68,7 +68,7 @@ export default function ArchitectureGrid() {
         </div>
 
         {/* Card 3: Data */}
-        <div className="group relative bg-white border-2 border-black p-8 flex flex-col justify-between overflow-hidden hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all cursor-pointer">
+        <div className="group relative bg-white border-2 border-black p-6 sm:p-8 flex flex-col justify-between overflow-hidden hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all cursor-pointer">
           <div className="absolute bottom-0 right-0 p-3 opacity-5 group-hover:opacity-10 transition-opacity rotate-12 translate-y-4">
             <iconify-icon icon="solar:database-linear" width="120"></iconify-icon>
           </div>
@@ -92,7 +92,7 @@ export default function ArchitectureGrid() {
         </div>
 
         {/* Card 4: Support Agents */}
-        <div className="md:col-span-2 group relative bg-white border-2 border-black p-8 flex flex-row items-center justify-between overflow-hidden hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all cursor-pointer">
+        <div className="md:col-span-2 group relative bg-white border-2 border-black p-6 sm:p-8 flex flex-row items-center justify-between overflow-hidden hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all cursor-pointer">
           <div className="z-10 max-w-md">
             <div className="flex items-center gap-3 mb-3">
               <div className="w-12 h-12 bg-[#FF4D00] flex items-center justify-center text-white">

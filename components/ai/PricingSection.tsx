@@ -19,20 +19,20 @@ export default function PricingSection() {
   return (
     <>
       {/* Pricing Section */}
-      <section id="pricing" className="py-24 px-6 md:px-12 bg-[#F3F1ED]">
+      <section id="pricing" className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 md:px-12 bg-[#F3F1ED]">
         <div className="max-w-[1920px] mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-12">
+          <div className="flex flex-col md:flex-row justify-between items-end mb-8 sm:mb-12">
             <div>
-              <h2 className="text-5xl md:text-7xl font-bold tracking-tighter mb-4 leading-[0.9]">
+              <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter mb-3 sm:mb-4 leading-[0.9]">
                 Engagement<br />Models
               </h2>
-              <p className="text-xl text-[#0A0A0A]">Transparent pricing. No hidden &quot;consulting fees&quot;.</p>
+              <p className="text-base sm:text-lg md:text-xl text-[#0A0A0A]">Transparent pricing. No hidden &quot;consulting fees&quot;.</p>
             </div>
           </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
           {/* Tier 1 */}
-          <div className="bg-white border-2 border-black p-8 hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all">
+          <div className="bg-white border-2 border-black p-6 sm:p-8 hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all">
             <div className="mb-6">
               <div className="text-xs font-mono text-[#666666] mb-2 uppercase tracking-wider">Discovery</div>
               <h3 className="text-3xl font-bold text-[#0A0A0A] mb-4">Blueprint Audit</h3>
@@ -53,11 +53,11 @@ export default function PricingSection() {
                 <iconify-icon icon="solar:check-circle-linear" className="text-[#FF4D00] text-lg"></iconify-icon> ROI Calculation
               </li>
             </ul>
-            <a href="#audit" className="block w-full py-3 border-2 border-black bg-white text-center text-sm font-bold text-black hover:bg-black hover:text-white transition-colors uppercase">Book Blueprint</a>
+            <a href="#audit" className="block w-full py-4 min-h-[48px] border-2 border-black bg-white text-center text-sm font-bold text-black hover:bg-black hover:text-white transition-colors uppercase touch-manipulation">Book Blueprint</a>
           </div>
 
           {/* Tier 2 */}
-          <div className="relative bg-[#0A0A0A] border-2 border-black p-8 shadow-[8px_8px_0px_0px_rgba(255,77,0,1)]">
+          <div className="relative bg-[#0A0A0A] border-2 border-black p-6 sm:p-8 shadow-[8px_8px_0px_0px_rgba(255,77,0,1)]">
             <div className="absolute top-0 right-0 bg-[#FF4D00] text-white text-xs font-bold px-3 py-1 uppercase">Popular</div>
             <div className="mb-6">
               <div className="text-xs font-mono text-[#FF4D00] mb-2 uppercase tracking-wider">Execution</div>
@@ -79,11 +79,11 @@ export default function PricingSection() {
                 <iconify-icon icon="solar:check-circle-bold" className="text-[#FF4D00] text-lg"></iconify-icon> 30 Days Hypercare
               </li>
             </ul>
-            <a href="#audit" className="block w-full py-3 bg-[#F3F1ED] text-center text-sm font-bold text-black hover:bg-white transition-colors uppercase">Start Build</a>
+            <a href="#audit" className="block w-full py-4 min-h-[48px] bg-[#F3F1ED] text-center text-sm font-bold text-black hover:bg-white transition-colors uppercase touch-manipulation">Start Build</a>
           </div>
 
           {/* Tier 3 */}
-          <div className="bg-white border-2 border-black p-8 hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all">
+          <div className="bg-white border-2 border-black p-6 sm:p-8 hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all">
             <div className="mb-6">
               <div className="text-xs font-mono text-[#666666] mb-2 uppercase tracking-wider">Enterprise</div>
               <h3 className="text-3xl font-bold text-[#0A0A0A] mb-4">Growth Partner</h3>
@@ -104,17 +104,17 @@ export default function PricingSection() {
                 <iconify-icon icon="solar:check-circle-linear" className="text-[#FF4D00] text-lg"></iconify-icon> Weekly Strategy Calls
               </li>
             </ul>
-            <a href="#audit" className="block w-full py-3 border-2 border-black bg-white text-center text-sm font-bold text-black hover:bg-black hover:text-white transition-colors uppercase">Apply for Partner</a>
+            <a href="#audit" className="block w-full py-4 min-h-[48px] border-2 border-black bg-white text-center text-sm font-bold text-black hover:bg-black hover:text-white transition-colors uppercase touch-manipulation">Apply for Partner</a>
           </div>
         </div>
         </div>
       </section>
 
       {/* Testimonials */}
-      <section className="py-16 px-6 md:px-12 bg-[#F3F1ED] border-t-2 border-black">
+      <section className="py-12 sm:py-16 px-4 sm:px-6 md:px-12 bg-[#F3F1ED] border-t-2 border-black">
         <div className="max-w-[1920px] mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="flex gap-4 p-8 bg-white border-2 border-black">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+            <div className="flex gap-3 sm:gap-4 p-6 sm:p-8 bg-white border-2 border-black">
               <div className="text-[#FF4D00] text-4xl font-serif leading-none">&quot;</div>
               <div>
                 <p className="text-[#0A0A0A] text-base leading-relaxed mb-6">Layer Zero didn&apos;t just add a tool, they re-architected our entire outbound motion. We are processing 10x the volume with zero headcount increase.</p>
@@ -127,7 +127,7 @@ export default function PricingSection() {
                 </div>
               </div>
             </div>
-            <div className="flex gap-4 p-8 bg-white border-2 border-black">
+            <div className="flex gap-3 sm:gap-4 p-6 sm:p-8 bg-white border-2 border-black">
               <div className="text-[#FF4D00] text-4xl font-serif leading-none">&quot;</div>
               <div>
                 <p className="text-[#0A0A0A] text-base leading-relaxed mb-6">The documentation and handover process was incredible. They don&apos;t just build black boxes; they teach you how to drive the machine.</p>
@@ -145,14 +145,14 @@ export default function PricingSection() {
       </section>
 
       {/* Contact Section */}
-      <section id="audit" className="py-24 px-6 md:px-12 bg-[#F3F1ED]">
+      <section id="audit" className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 md:px-12 bg-[#F3F1ED]">
         <div className="max-w-[1920px] mx-auto">
           <div className="border-2 border-black overflow-hidden bg-white">
             <div className="grid grid-cols-1 lg:grid-cols-2">
               {/* Left */}
-              <div className="p-10 md:p-16 border-b-2 lg:border-b-0 lg:border-r-2 border-black relative">
-                <h2 className="text-5xl md:text-6xl font-bold mb-6 tracking-tight text-[#0A0A0A]">Scale without chaos.</h2>
-                <p className="text-[#666666] mb-10 text-lg leading-relaxed max-w-sm">
+              <div className="p-6 sm:p-10 md:p-16 border-b-2 lg:border-b-0 lg:border-r-2 border-black relative">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 tracking-tight text-[#0A0A0A]">Scale without chaos.</h2>
+                <p className="text-[#666666] mb-8 sm:mb-10 text-base sm:text-lg leading-relaxed max-w-sm">
                   Ready to stop manual work? Fill out the intake form to see if your infrastructure is compatible with our automation stack.
                 </p>
                 
@@ -184,14 +184,14 @@ export default function PricingSection() {
               </div>
 
               {/* Right (Form) */}
-              <div className="p-10 md:p-16 bg-[#0A0A0A]">
+              <div className="p-6 sm:p-10 md:p-16 bg-[#0A0A0A]">
                 <form className="space-y-5" onSubmit={handleSubmit}>
-                  <div className="grid grid-cols-2 gap-5">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     <div className="space-y-2">
                       <label className="text-xs font-bold text-[#F3F1ED] uppercase tracking-wider">First Name</label>
                       <input
                         type="text"
-                        className="w-full bg-transparent border-b-2 border-white/20 px-0 py-3 text-sm text-[#F3F1ED] focus:outline-none focus:border-[#FF4D00] transition-all placeholder:text-white/30"
+                        className="w-full bg-transparent border-b-2 border-white/20 px-0 py-3 sm:py-4 text-sm text-[#F3F1ED] focus:outline-none focus:border-[#FF4D00] transition-all placeholder:text-white/30 touch-manipulation"
                         placeholder="Jane"
                         value={formData.firstName}
                         onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
@@ -201,7 +201,7 @@ export default function PricingSection() {
                       <label className="text-xs font-bold text-[#F3F1ED] uppercase tracking-wider">Company</label>
                       <input
                         type="text"
-                        className="w-full bg-transparent border-b-2 border-white/20 px-0 py-3 text-sm text-[#F3F1ED] focus:outline-none focus:border-[#FF4D00] transition-all placeholder:text-white/30"
+                        className="w-full bg-transparent border-b-2 border-white/20 px-0 py-3 sm:py-4 text-sm text-[#F3F1ED] focus:outline-none focus:border-[#FF4D00] transition-all placeholder:text-white/30 touch-manipulation"
                         placeholder="Acme Inc."
                         value={formData.company}
                         onChange={(e) => setFormData({ ...formData, company: e.target.value })}
@@ -213,7 +213,7 @@ export default function PricingSection() {
                     <label className="text-xs font-bold text-[#F3F1ED] uppercase tracking-wider">Email Address</label>
                     <input
                       type="email"
-                      className="w-full bg-transparent border-b-2 border-white/20 px-0 py-3 text-sm text-[#F3F1ED] focus:outline-none focus:border-[#FF4D00] transition-all placeholder:text-white/30"
+                      className="w-full bg-transparent border-b-2 border-white/20 px-0 py-3 sm:py-4 text-sm text-[#F3F1ED] focus:outline-none focus:border-[#FF4D00] transition-all placeholder:text-white/30 touch-manipulation"
                       placeholder="jane@acme.com"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -223,7 +223,7 @@ export default function PricingSection() {
                   <div className="space-y-2">
                     <label className="text-xs font-bold text-[#F3F1ED] uppercase tracking-wider">Primary Bottleneck</label>
                     <select
-                      className="w-full bg-transparent border-b-2 border-white/20 px-0 py-3 text-sm text-[#F3F1ED] focus:outline-none focus:border-[#FF4D00] transition-all appearance-none cursor-pointer"
+                      className="w-full bg-transparent border-b-2 border-white/20 px-0 py-3 sm:py-4 text-sm text-[#F3F1ED] focus:outline-none focus:border-[#FF4D00] transition-all appearance-none cursor-pointer touch-manipulation"
                       value={formData.bottleneck}
                       onChange={(e) => setFormData({ ...formData, bottleneck: e.target.value })}
                     >
@@ -237,7 +237,7 @@ export default function PricingSection() {
                   <div className="space-y-2">
                     <label className="text-xs font-bold text-[#F3F1ED] uppercase tracking-wider">Current Stack (Optional)</label>
                     <textarea
-                      className="w-full bg-transparent border-b-2 border-white/20 px-0 py-3 text-sm text-[#F3F1ED] focus:outline-none focus:border-[#FF4D00] transition-all placeholder:text-white/30 min-h-[80px] resize-none"
+                      className="w-full bg-transparent border-b-2 border-white/20 px-0 py-3 sm:py-4 text-sm text-[#F3F1ED] focus:outline-none focus:border-[#FF4D00] transition-all placeholder:text-white/30 min-h-[80px] resize-none touch-manipulation"
                       placeholder="e.g. HubSpot, Slack, Airtable..."
                       value={formData.stack}
                       onChange={(e) => setFormData({ ...formData, stack: e.target.value })}
@@ -246,7 +246,7 @@ export default function PricingSection() {
 
                   <button
                     type="submit"
-                    className="w-full bg-[#F3F1ED] text-black font-bold text-sm py-3 hover:bg-white transition-colors mt-6 uppercase tracking-wider"
+                    className="w-full bg-[#F3F1ED] text-black font-bold text-sm py-4 hover:bg-white transition-colors mt-6 uppercase tracking-wider touch-manipulation min-h-[48px]"
                   >
                     Initialize Audit
                   </button>

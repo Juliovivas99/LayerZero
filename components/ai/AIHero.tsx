@@ -2,7 +2,7 @@ import UnicornScene from "unicornstudio-react/next";
 
 export default function AIHero() {
   return (
-    <section className="relative pt-32 pb-20 sm:pt-40 sm:pb-32 overflow-hidden bg-[#050505] text-zinc-400">
+    <section className="relative pt-24 sm:pt-32 md:pt-40 pb-28 sm:pb-32 md:pb-40 overflow-hidden bg-[#050505] text-zinc-400">
       {/* Unicorn Studio WebGL Background */}
       <div className="absolute inset-0 pointer-events-none opacity-20">
         <UnicornScene 
@@ -17,11 +17,11 @@ export default function AIHero() {
       <div className="absolute inset-0 bg-grid-pattern bg-[size:50px_50px] opacity-[0.03] pointer-events-none"></div>
       <div className="absolute top-0 inset-x-0 h-[600px] hero-glow pointer-events-none"></div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 relative z-10">
         <div className="flex flex-col items-center text-center">
           
           {/* Terminal Badge */}
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#f97316]/20 bg-[#f97316]/5 text-[#f97316] text-[11px] font-mono mb-8 backdrop-blur-sm">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#f97316]/20 bg-[#f97316]/5 text-[#f97316] text-[10px] sm:text-[11px] font-mono mb-6 sm:mb-8 backdrop-blur-sm">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#f97316] opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-[#f97316]"></span>
@@ -30,57 +30,58 @@ export default function AIHero() {
           </div>
 
           {/* Main Title */}
-          <h1 className="text-5xl sm:text-7xl md:text-8xl font-medium tracking-tighter text-white mb-8 max-w-5xl">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-medium tracking-tighter text-white mb-6 sm:mb-8 max-w-5xl leading-tight">
             The neural nervous system<br /> 
             <span className="text-transparent bg-clip-text bg-gradient-to-b from-[#f97316] to-[#c2410c]">for your enterprise.</span>
           </h1>
 
-          <p className="text-lg text-zinc-500 max-w-2xl font-light leading-relaxed mb-10">
+          <p className="text-base sm:text-lg text-zinc-500 max-w-2xl font-light leading-relaxed mb-8 sm:mb-10 px-4 sm:px-0">
             We don&apos;t build chatbots. We engineer autonomous infrastructure. 
             Connect your data, logic, and actions into a self-healing operational machine.
           </p>
 
           {/* CTAs */}
-          <div className="flex flex-col sm:flex-row gap-4 items-center">
-            <a href="#audit" className="h-12 px-8 rounded-lg bg-[#f97316] text-white font-medium text-sm flex items-center gap-2 hover:bg-[#ea580c] transition-all shadow-[0_0_30px_-5px_rgba(249,115,22,0.5)]">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-center w-full sm:w-auto px-4 sm:px-0">
+            <a href="#audit" className="w-full sm:w-auto min-h-[48px] h-12 px-6 sm:px-8 rounded-lg bg-[#f97316] text-white font-medium text-sm flex items-center justify-center gap-2 hover:bg-[#ea580c] transition-all shadow-[0_0_30px_-5px_rgba(249,115,22,0.5)] touch-manipulation">
               <iconify-icon icon="solar:play-circle-linear" className="text-lg"></iconify-icon>
               Deploy Infrastructure
             </a>
-            <a href="#architecture" className="h-12 px-8 rounded-lg border border-white/10 bg-white/5 text-white font-medium text-sm flex items-center gap-2 hover:bg-white/10 transition-all backdrop-blur-md">
+            <a href="#architecture" className="w-full sm:w-auto min-h-[48px] h-12 px-6 sm:px-8 rounded-lg border border-white/10 bg-white/5 text-white font-medium text-sm flex items-center justify-center gap-2 hover:bg-white/10 transition-all backdrop-blur-md touch-manipulation">
               <iconify-icon icon="solar:layers-minimalistic-linear" className="text-lg"></iconify-icon>
               View Stack
             </a>
           </div>
 
           {/* Code Visual (The "Terminal") */}
-          <div className="mt-20 w-full max-w-3xl rounded-xl border border-white/10 bg-[#0A0A0A] shadow-2xl overflow-hidden relative group">
+          <div className="mt-6 sm:mt-10 md:mt-16 mb-8 sm:mb-12 w-full max-w-3xl rounded-lg sm:rounded-xl border border-white/10 bg-[#0A0A0A] shadow-2xl overflow-hidden relative group">
             {/* Window Controls */}
-            <div className="h-8 border-b border-white/5 flex items-center px-4 gap-2 bg-white/[0.02]">
-              <div className="w-3 h-3 rounded-full bg-red-500/20 border border-red-500/50"></div>
-              <div className="w-3 h-3 rounded-full bg-yellow-500/20 border border-yellow-500/50"></div>
-              <div className="w-3 h-3 rounded-full bg-green-500/20 border border-green-500/50"></div>
-              <div className="ml-auto text-[10px] font-mono text-zinc-600">setupclaw_agent.py</div>
+            <div className="h-7 sm:h-8 border-b border-white/5 flex items-center px-2.5 sm:px-3 md:px-4 gap-1.5 sm:gap-2 bg-white/[0.02]">
+              <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 md:w-3 md:h-3 rounded-full bg-red-500/20 border border-red-500/50"></div>
+              <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 md:w-3 md:h-3 rounded-full bg-yellow-500/20 border border-yellow-500/50"></div>
+              <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 md:w-3 md:h-3 rounded-full bg-green-500/20 border border-green-500/50"></div>
+              <div className="ml-auto text-[8px] sm:text-[9px] md:text-[10px] font-mono text-zinc-600 hidden xs:block">setupclaw_agent.py</div>
             </div>
             {/* Code Content */}
-            <div className="p-6 text-left font-mono text-xs sm:text-sm text-zinc-400 leading-relaxed overflow-x-auto">
-              <div className="flex"><span className="text-zinc-600 w-8 select-none">1</span><span className="text-purple-400">import</span> <span className="text-white">SetupClaw</span> <span className="text-purple-400">as</span> <span className="text-white">sc</span></div>
-              <div className="flex"><span className="text-zinc-600 w-8 select-none">2</span></div>
-              <div className="flex"><span className="text-zinc-600 w-8 select-none">3</span><span className="text-zinc-500"># Initialize autonomous agent swarm</span></div>
-              <div className="flex"><span className="text-zinc-600 w-8 select-none">4</span><span className="text-blue-400">class</span> <span className="text-yellow-200">RevenueEngine</span>:</div>
-              <div className="flex"><span className="text-zinc-600 w-8 select-none">5</span><span className="pl-4 text-blue-400">def</span> <span className="text-yellow-200">__init__</span>(<span className="text-orange-300">self</span>):</div>
-              <div className="flex"><span className="text-zinc-600 w-8 select-none">6</span><span className="pl-8 text-orange-300">self</span>.enrichment = sc.Agent(<span className="text-green-400">&quot;Clearbit&quot;</span>)</div>
-              <div className="flex"><span className="text-zinc-600 w-8 select-none">7</span><span className="pl-8 text-orange-300">self</span>.crm = sc.Connect(<span className="text-green-400">&quot;HubSpot&quot;</span>)</div>
-              <div className="flex"><span className="text-zinc-600 w-8 select-none">8</span><span className="pl-8 text-orange-300">self</span>.outreach = sc.LLM(<span className="text-green-400">&quot;GPT-4o&quot;</span>)</div>
-              <div className="flex"><span className="text-zinc-600 w-8 select-none">9</span></div>
-              <div className="flex"><span className="text-zinc-600 w-8 select-none">10</span><span className="pl-4 text-blue-400">async def</span> <span className="text-yellow-200">execute_workflow</span>(<span className="text-orange-300">self</span>, lead):</div>
-              <div className="flex"><span className="text-zinc-600 w-8 select-none">11</span><span className="pl-8 text-purple-400">await</span> <span className="text-orange-300">self</span>.enrichment.process(lead)</div>
-              <div className="flex"><span className="text-zinc-600 w-8 select-none">12</span><span className="pl-8 text-purple-400">if</span> lead.score &gt; <span className="text-orange-400">80</span>:</div>
-              <div className="flex"><span className="text-zinc-600 w-8 select-none">13</span><span className="pl-12 text-zinc-300 typing-cursor">return self.outreach.generate_personalized_sequence(lead)</span></div>
+            <div className="p-3 sm:p-5 md:p-6 text-left font-mono text-[9px] xs:text-[10px] sm:text-xs md:text-sm text-zinc-400 leading-relaxed overflow-x-auto">
+              <div className="flex"><span className="text-zinc-600 w-6 sm:w-8 select-none">1</span><span className="text-purple-400">import</span> <span className="text-white">SetupClaw</span> <span className="text-purple-400">as</span> <span className="text-white">sc</span></div>
+              <div className="flex"><span className="text-zinc-600 w-6 sm:w-8 select-none">2</span></div>
+              <div className="flex"><span className="text-zinc-600 w-6 sm:w-8 select-none">3</span><span className="text-zinc-500"># Initialize agent swarm</span></div>
+              <div className="flex"><span className="text-zinc-600 w-6 sm:w-8 select-none">4</span><span className="text-blue-400">class</span> <span className="text-yellow-200">RevenueEngine</span>:</div>
+              <div className="flex"><span className="text-zinc-600 w-6 sm:w-8 select-none">5</span><span className="pl-3 sm:pl-4 text-blue-400">def</span> <span className="text-yellow-200">__init__</span>(<span className="text-orange-300">self</span>):</div>
+              <div className="flex"><span className="text-zinc-600 w-6 sm:w-8 select-none">6</span><span className="pl-6 sm:pl-8 text-orange-300">self</span>.enrichment = sc.Agent(<span className="text-green-400">&quot;Clearbit&quot;</span>)</div>
+              <div className="flex"><span className="text-zinc-600 w-6 sm:w-8 select-none">7</span><span className="pl-6 sm:pl-8 text-orange-300">self</span>.crm = sc.Connect(<span className="text-green-400">&quot;HubSpot&quot;</span>)</div>
+              <div className="flex"><span className="text-zinc-600 w-6 sm:w-8 select-none">8</span><span className="pl-6 sm:pl-8 text-orange-300">self</span>.outreach = sc.LLM(<span className="text-green-400">&quot;GPT-4o&quot;</span>)</div>
+              <div className="hidden sm:flex"><span className="text-zinc-600 w-6 sm:w-8 select-none">9</span></div>
+              <div className="hidden sm:flex"><span className="text-zinc-600 w-6 sm:w-8 select-none">10</span><span className="pl-3 sm:pl-4 text-blue-400">async def</span> <span className="text-yellow-200">execute_workflow</span>(<span className="text-orange-300">self</span>, lead):</div>
+              <div className="hidden sm:flex"><span className="text-zinc-600 w-6 sm:w-8 select-none">11</span><span className="pl-6 sm:pl-8 text-purple-400">await</span> <span className="text-orange-300">self</span>.enrichment.process(lead)</div>
+              <div className="hidden sm:flex"><span className="text-zinc-600 w-6 sm:w-8 select-none">12</span><span className="pl-6 sm:pl-8 text-purple-400">if</span> lead.score &gt; <span className="text-orange-400">80</span>:</div>
+              <div className="hidden sm:flex"><span className="text-zinc-600 w-6 sm:w-8 select-none">13</span><span className="pl-10 sm:pl-12 text-zinc-300 typing-cursor">return self.outreach.generate(lead)</span></div>
             </div>
             {/* Status Bar */}
-            <div className="absolute bottom-4 right-4 bg-zinc-900 border border-white/10 px-3 py-1 rounded text-[10px] font-mono text-green-400 flex items-center gap-2">
+            <div className="absolute bottom-3 sm:bottom-4 right-3 sm:right-4 bg-zinc-900 border border-white/10 px-2 sm:px-3 py-1 rounded text-[9px] sm:text-[10px] font-mono text-green-400 flex items-center gap-1.5 sm:gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse"></span>
-              connected: wss://api.setupclaw.com
+              <span className="hidden xs:inline">connected: wss://api.setupclaw.com</span>
+              <span className="xs:hidden">connected</span>
             </div>
           </div>
         </div>
