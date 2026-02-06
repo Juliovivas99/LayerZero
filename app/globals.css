@@ -1,0 +1,212 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base Setup */
+:root {
+  --bg-color: #F3F1ED;
+  --text-main: #0A0A0A;
+  --text-muted: #666666;
+  --accent: #FF4D00;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: var(--text-main);
+  color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Animations */
+.fade-in-up {
+  animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+
+@keyframes fadeInUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Marquee Animation */
+.marquee-container {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+}
+
+.marquee-content {
+  display: flex;
+  animation: marquee 60s linear infinite;
+  will-change: transform;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Custom UI Elements */
+.input-minimal {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(0,0,0,0.1);
+  border-radius: 0;
+  padding: 1.5rem 0;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.input-minimal:focus {
+  outline: none;
+  border-bottom: 2px solid var(--text-main);
+}
+
+.input-minimal::placeholder {
+  color: rgba(0,0,0,0.2);
+}
+
+.input-minimal-dark {
+  background: transparent;
+  color: white;
+}
+
+.input-minimal-dark::placeholder {
+  color: rgba(255,255,255,0.2);
+}
+
+.input-minimal-dark:focus {
+  border-bottom: 2px solid white;
+}
+
+.checkbox-custom {
+  appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 2px solid rgba(0,0,0,0.2);
+  border-radius: 0px;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.checkbox-custom::before {
+  content: "";
+  width: 0.8rem;
+  height: 0.8rem;
+  background: var(--text-main);
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+}
+
+.checkbox-custom:checked::before {
+  transform: scale(1);
+}
+
+.checkbox-custom:checked {
+  border-color: var(--text-main);
+}
+
+/* Hover Effects */
+.hover-scale-img {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.group:hover .hover-scale-img {
+  transform: scale(1.05);
+}
+
+.btn-fill {
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s;
+}
+
+.btn-fill::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background-color: white;
+  transition: height 0.3s cubic-bezier(0.65, 0, 0.35, 1);
+  z-index: -1;
+}
+
+.btn-fill:hover::after {
+  height: 100%;
+}
+
+.btn-fill:hover {
+  color: black;
+}
+
+/* Glass morphism */
+.glass {
+  background: rgba(5, 5, 5, 0.7);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+/* Gradient effects */
+.hero-glow {
+  background: radial-gradient(circle at 50% 0%, rgba(249, 115, 22, 0.08) 0%, transparent 60%);
+}
+
+/* Mask utilities */
+.mask-linear {
+  mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+}
+
+.mask-sides {
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}
+
+/* Terminal Typing Effect */
+.typing-cursor::after {
+  content: '▋';
+  animation: blink 1s step-start infinite;
+  color: #f97316;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+/* Text stroke effect */
+.stroke-text {
+  -webkit-text-stroke: 2px #F3F1ED;
+  color: transparent;
+}
