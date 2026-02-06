@@ -19,7 +19,6 @@ export default function Navigation({ variant = 'home' }: NavigationProps) {
 
   const aiLinks: NavLink[] = [
     { label: 'Architecture', href: '#architecture' },
-    { label: 'Solutions', href: '#services' },
     { label: 'Protocol', href: '#process' },
     { label: 'Pricing', href: '#pricing' },
   ];
