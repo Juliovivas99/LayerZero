@@ -4,6 +4,7 @@ import AIHero from '@/components/ai/AIHero';
 import ArchitectureGrid from '@/components/ai/ArchitectureGrid';
 import ProcessTimeline from '@/components/ai/ProcessTimeline';
 import PricingSection from '@/components/ai/PricingSection';
+import ContactSection from '@/components/ai/ContactSection';
 
 export const metadata = {
   title: 'AI Services | Layer Zero Studio',
@@ -19,6 +20,7 @@ export default function Home() {
         <ArchitectureGrid />
         <ProcessTimeline />
         <PricingSection />
+        <ContactSection />
       </main>
       <Footer />
     </>
