@@ -1,19 +1,24 @@
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
-import Hero from '@/components/home/Hero';
-import WorkSection from '@/components/home/WorkSection';
-import ServicesSection from '@/components/home/ServicesSection';
-import ContactSection from '@/components/home/ContactSection';
+import AIHero from '@/components/ai/AIHero';
+import ArchitectureGrid from '@/components/ai/ArchitectureGrid';
+import ProcessTimeline from '@/components/ai/ProcessTimeline';
+import PricingSection from '@/components/ai/PricingSection';
+
+export const metadata = {
+  title: 'AI Services | Layer Zero Studio',
+  description: 'Enterprise-grade AI automation architecture. We build the infrastructure that scales your business autonomously.',
+};
 
 export default function Home() {
   return (
     <>
-      <Navigation variant="home" />
+      <Navigation variant="ai" />
       <main>
-        <Hero />
-        <WorkSection />
-        <ServicesSection />
-        <ContactSection />
+        <AIHero />
+        <ArchitectureGrid />
+        <ProcessTimeline />
+        <PricingSection />
       </main>
       <Footer />
     </>
