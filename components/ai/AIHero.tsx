@@ -42,7 +42,7 @@ export default function AIHero() {
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-center w-full sm:w-auto px-4 sm:px-0">
-            <a href="#audit" className="w-full sm:w-auto min-h-[48px] h-12 px-6 sm:px-8 rounded-lg bg-[#f97316] text-white font-medium text-sm flex items-center justify-center gap-2 hover:bg-[#ea580c] transition-all shadow-[0_0_30px_-5px_rgba(249,115,22,0.5)] touch-manipulation">
+            <a href="#pricing" className="w-full sm:w-auto min-h-[48px] h-12 px-6 sm:px-8 rounded-lg bg-[#f97316] text-white font-medium text-sm flex items-center justify-center gap-2 hover:bg-[#ea580c] transition-all shadow-[0_0_30px_-5px_rgba(249,115,22,0.5)] touch-manipulation">
               <iconify-icon icon="solar:play-circle-linear" className="text-lg"></iconify-icon>
               Deploy Infrastructure
             </a>
@@ -85,6 +85,11 @@ export default function AIHero() {
             </div>
           </div>
         </div>
+      </div>
+      
+      {/* Integrations Label */}
+      <div className="absolute bottom-[101px] left-4 sm:left-6 md:left-8">
+        <span className="text-[10px] sm:text-xs font-mono text-[#f97316] uppercase tracking-[0.2em]">integrations</span>
       </div>
       
       {/* Tech Stack Marquee - PRESERVED FROM ORIGINAL */}
