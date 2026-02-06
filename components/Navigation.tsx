@@ -58,7 +58,7 @@ export default function Navigation({ variant = 'home' }: NavigationProps) {
             </Link>
           )}
           <a
-            href="#contact"
+            href="#audit"
             className="px-6 py-3 border border-white/30 hover:bg-white hover:text-black transition-all text-xs font-bold uppercase tracking-widest rounded-full backdrop-blur-sm"
           >
             Let&apos;s Talk
