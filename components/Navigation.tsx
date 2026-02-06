@@ -57,21 +57,12 @@ export default function Navigation({ variant = 'home' }: NavigationProps) {
               AI Services
             </Link>
           )}
-          {variant === 'ai' ? (
-            <a
-              href="#audit"
-              className="text-xs font-medium bg-white/10 backdrop-blur-md text-white px-4 py-1.5 rounded border border-white/20 hover:bg-white/20 transition-all flex items-center justify-center gap-2 shadow-lg"
-            >
-              <iconify-icon icon="solar:terminal-linear"></iconify-icon> System Audit
-            </a>
-          ) : (
-            <a
-              href="#contact"
-              className="px-6 py-3 border border-white/30 hover:bg-white hover:text-black transition-all text-xs font-bold uppercase tracking-widest rounded-full backdrop-blur-sm"
-            >
-              Let&apos;s Talk
-            </a>
-          )}
+          <a
+            href="#contact"
+            className="px-6 py-3 border border-white/30 hover:bg-white hover:text-black transition-all text-xs font-bold uppercase tracking-widest rounded-full backdrop-blur-sm"
+          >
+            Let&apos;s Talk
+          </a>
         </div>
 
         {/* Mobile Menu Button */}
