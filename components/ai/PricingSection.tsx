@@ -103,7 +103,7 @@ export default function PricingSection() {
               <div className="text-xs font-mono text-[#666666] mb-2 uppercase tracking-wider">Optimize</div>
               <h3 className="text-3xl font-bold text-[#0A0A0A] mb-4">Managed Momentum Partnership</h3>
               <div className="flex items-baseline">
-                <span className="text-4xl font-bold text-[#0A0A0A]">$4,500</span>
+                <span className="text-4xl font-bold text-[#0A0A0A]">$7,500</span>
                 <span className="ml-2 text-sm text-[#666666]">/month</span>
               </div>
             </div>
