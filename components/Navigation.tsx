@@ -68,10 +68,10 @@ export default function Navigation({ variant = 'home' }: NavigationProps) {
               </Link>
             )}
             <a
-              href="#audit"
+              href="#contact"
               className="px-6 py-3 text-xs font-medium uppercase tracking-wide rounded-full glass border border-white/10 hover:bg-white/10 transition-all flex items-center"
             >
-              Let&apos;s Talk
+              Book a call
             </a>
           </div>
 
@@ -129,11 +129,11 @@ export default function Navigation({ variant = 'home' }: NavigationProps) {
               </Link>
             )}
             <a
-              href="#audit"
+              href="#contact"
               onClick={handleMobileLinkClick}
               className="block w-full py-4 bg-[#FF4D00] text-white text-sm font-bold uppercase tracking-widest rounded-full hover:bg-[#ff6a00] transition-all shadow-[0_0_30px_-5px_rgba(249,115,22,0.5)]"
             >
-              Let&apos;s Talk
+              Book a call
             </a>
           </div>
         </div>

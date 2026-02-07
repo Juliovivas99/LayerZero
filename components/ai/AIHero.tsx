@@ -36,19 +36,16 @@ export default function AIHero() {
           </h1>
 
           <p className="text-base sm:text-lg text-zinc-500 max-w-2xl font-light leading-relaxed mb-8 sm:mb-10 px-4 sm:px-0">
-            We don&apos;t build chatbots. We engineer autonomous infrastructure. 
-            Connect your data, logic, and actions into a self-healing operational machine.
+            We design, build, and maintain autonomous infrastructure inside operating businesses.
           </p>
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-center w-full sm:w-auto px-4 sm:px-0">
-            <a href="#pricing" className="w-full sm:w-auto min-h-[48px] h-12 px-6 sm:px-8 rounded-lg bg-[#f97316] text-white font-medium text-sm flex items-center justify-center gap-2 hover:bg-[#ea580c] transition-all shadow-[0_0_30px_-5px_rgba(249,115,22,0.5)] touch-manipulation">
-              <iconify-icon icon="solar:play-circle-linear" className="text-lg"></iconify-icon>
-              Deploy Infrastructure
+            <a href="#contact" className="w-full sm:w-auto min-h-[48px] h-12 px-6 sm:px-8 rounded-lg bg-[#f97316] text-white font-medium text-sm flex items-center justify-center hover:bg-[#ea580c] transition-all shadow-[0_0_30px_-5px_rgba(249,115,22,0.5)] touch-manipulation">
+              Book a call
             </a>
-            <a href="#architecture" className="w-full sm:w-auto min-h-[48px] h-12 px-6 sm:px-8 rounded-lg border border-white/10 bg-white/5 text-white font-medium text-sm flex items-center justify-center gap-2 hover:bg-white/10 transition-all backdrop-blur-md touch-manipulation">
-              <iconify-icon icon="solar:layers-minimalistic-linear" className="text-lg"></iconify-icon>
-              View Stack
+            <a href="#pricing" className="w-full sm:w-auto min-h-[48px] h-12 px-6 sm:px-8 rounded-lg border border-white/10 bg-white/5 text-white font-medium text-sm flex items-center justify-center hover:bg-white/10 transition-all backdrop-blur-md touch-manipulation">
+              See pricing
             </a>
           </div>
 

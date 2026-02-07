@@ -34,126 +34,160 @@ export default function PricingSection() {
           {/* Tier 1 */}
           <div className="bg-white border-2 border-black p-6 sm:p-8 hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all">
             <div className="mb-6">
-              <div className="text-xs font-mono text-[#666666] mb-2 uppercase tracking-wider">Discovery</div>
-              <h3 className="text-3xl font-bold text-[#0A0A0A] mb-4">Blueprint Audit</h3>
+              <div className="text-xs font-mono text-[#666666] mb-2 uppercase tracking-wider">Design</div>
+              <h3 className="text-3xl font-bold text-[#0A0A0A] mb-4">Systems Blueprint Session</h3>
               <div className="flex items-baseline">
                 <span className="text-4xl font-bold text-[#0A0A0A]">$995</span>
                 <span className="ml-2 text-sm text-[#666666]">one-time</span>
               </div>
             </div>
-            <p className="text-sm text-[#666666] mb-8 min-h-[60px] leading-relaxed">Map your entire process and receive a detailed automation architecture before building.</p>
+            <p className="text-sm text-[#666666] mb-8 min-h-[60px] leading-relaxed">A focused working session to map workflows, define success metrics, and produce a build-ready scope.</p>
             <ul className="space-y-3 mb-8">
               <li className="flex items-center gap-3 text-sm text-[#0A0A0A]">
-                <iconify-icon icon="solar:check-circle-linear" className="text-[#FF4D00] text-lg"></iconify-icon> System Flowchart
+                <iconify-icon icon="solar:check-circle-linear" className="text-[#FF4D00] text-lg"></iconify-icon> Workflow map
               </li>
               <li className="flex items-center gap-3 text-sm text-[#0A0A0A]">
-                <iconify-icon icon="solar:check-circle-linear" className="text-[#FF4D00] text-lg"></iconify-icon> Tool Stack Selection
+                <iconify-icon icon="solar:check-circle-linear" className="text-[#FF4D00] text-lg"></iconify-icon> Integration plan
               </li>
               <li className="flex items-center gap-3 text-sm text-[#0A0A0A]">
-                <iconify-icon icon="solar:check-circle-linear" className="text-[#FF4D00] text-lg"></iconify-icon> ROI Calculation
+                <iconify-icon icon="solar:check-circle-linear" className="text-[#FF4D00] text-lg"></iconify-icon> Architecture diagram
+              </li>
+              <li className="flex items-center gap-3 text-sm text-[#0A0A0A]">
+                <iconify-icon icon="solar:check-circle-linear" className="text-[#FF4D00] text-lg"></iconify-icon> Prioritized automation backlog
+              </li>
+              <li className="flex items-center gap-3 text-sm text-[#0A0A0A]">
+                <iconify-icon icon="solar:check-circle-linear" className="text-[#FF4D00] text-lg"></iconify-icon> Build plan + timeline
               </li>
             </ul>
-            <a href="#audit" className="block w-full py-4 min-h-[48px] border-2 border-black bg-white text-center text-sm font-bold text-black hover:bg-black hover:text-white transition-colors uppercase touch-manipulation">Book Blueprint</a>
+            <a href="#contact" className="block w-full py-4 min-h-[48px] border-2 border-black bg-white text-center text-sm font-bold text-black hover:bg-black hover:text-white transition-colors uppercase touch-manipulation">Book a call</a>
           </div>
 
           {/* Tier 2 */}
           <div className="relative bg-[#0A0A0A] border-2 border-black p-6 sm:p-8 shadow-[8px_8px_0px_0px_rgba(255,77,0,1)]">
             <div className="absolute top-0 right-0 bg-[#FF4D00] text-white text-xs font-bold px-3 py-1 uppercase">Popular</div>
             <div className="mb-6">
-              <div className="text-xs font-mono text-[#FF4D00] mb-2 uppercase tracking-wider">Execution</div>
-              <h3 className="text-3xl font-bold text-[#F3F1ED] mb-4">System Build</h3>
+              <div className="text-xs font-mono text-[#FF4D00] mb-2 uppercase tracking-wider">Build</div>
+              <h3 className="text-3xl font-bold text-[#F3F1ED] mb-4">Autonomous Infrastructure Build</h3>
               <div className="flex items-baseline">
                 <span className="text-4xl font-bold text-[#F3F1ED]">$3,500</span>
                 <span className="ml-2 text-sm text-[#F3F1ED]/70">start price</span>
               </div>
             </div>
-            <p className="text-sm text-[#F3F1ED]/70 mb-8 min-h-[60px] leading-relaxed">Custom engineered automation systems for specific departments (Sales, Ops, HR).</p>
+            <p className="text-sm text-[#F3F1ED]/70 mb-8 min-h-[60px] leading-relaxed">Build and deploy production automations integrated into your existing stack.</p>
             <ul className="space-y-3 mb-8">
               <li className="flex items-center gap-3 text-sm text-[#F3F1ED]">
-                <iconify-icon icon="solar:check-circle-bold" className="text-[#FF4D00] text-lg"></iconify-icon> Custom Python/JS Logic
+                <iconify-icon icon="solar:check-circle-bold" className="text-[#FF4D00] text-lg"></iconify-icon> Custom workflow automation (code-first)
               </li>
               <li className="flex items-center gap-3 text-sm text-[#F3F1ED]">
-                <iconify-icon icon="solar:check-circle-bold" className="text-[#FF4D00] text-lg"></iconify-icon> Live Implementation
+                <iconify-icon icon="solar:check-circle-bold" className="text-[#FF4D00] text-lg"></iconify-icon> Integrations (CRM/email/calendar/support)
               </li>
               <li className="flex items-center gap-3 text-sm text-[#F3F1ED]">
-                <iconify-icon icon="solar:check-circle-bold" className="text-[#FF4D00] text-lg"></iconify-icon> 30 Days Hypercare
+                <iconify-icon icon="solar:check-circle-bold" className="text-[#FF4D00] text-lg"></iconify-icon> Data layer + monitoring
+              </li>
+              <li className="flex items-center gap-3 text-sm text-[#F3F1ED]">
+                <iconify-icon icon="solar:check-circle-bold" className="text-[#FF4D00] text-lg"></iconify-icon> Error handling + fallbacks
+              </li>
+              <li className="flex items-center gap-3 text-sm text-[#F3F1ED]">
+                <iconify-icon icon="solar:check-circle-bold" className="text-[#FF4D00] text-lg"></iconify-icon> Documentation + handoff
+              </li>
+              <li className="flex items-center gap-3 text-sm text-[#F3F1ED]">
+                <iconify-icon icon="solar:check-circle-bold" className="text-[#FF4D00] text-lg"></iconify-icon> 30-day hypercare
               </li>
             </ul>
-            <a href="#audit" className="block w-full py-4 min-h-[48px] bg-[#F3F1ED] text-center text-sm font-bold text-black hover:bg-white transition-colors uppercase touch-manipulation">Start Build</a>
+            <a href="#contact" className="block w-full py-4 min-h-[48px] bg-[#F3F1ED] text-center text-sm font-bold text-black hover:bg-white transition-colors uppercase touch-manipulation">Book a call</a>
           </div>
 
           {/* Tier 3 */}
           <div className="bg-white border-2 border-black p-6 sm:p-8 hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all">
             <div className="mb-6">
-              <div className="text-xs font-mono text-[#666666] mb-2 uppercase tracking-wider">Enterprise</div>
-              <h3 className="text-3xl font-bold text-[#0A0A0A] mb-4">Growth Partner</h3>
+              <div className="text-xs font-mono text-[#666666] mb-2 uppercase tracking-wider">Optimize</div>
+              <h3 className="text-3xl font-bold text-[#0A0A0A] mb-4">Managed Momentum Partnership</h3>
               <div className="flex items-baseline">
                 <span className="text-4xl font-bold text-[#0A0A0A]">$4,500</span>
                 <span className="ml-2 text-sm text-[#666666]">/month</span>
               </div>
             </div>
-            <p className="text-sm text-[#666666] mb-8 min-h-[60px] leading-relaxed">Fractional Head of Automation. Continuous optimization and new feature rollouts.</p>
+            <p className="text-sm text-[#666666] mb-8 min-h-[60px] leading-relaxed">Ongoing engineering + optimization. Your systems evolve as your business grows.</p>
             <ul className="space-y-3 mb-8">
               <li className="flex items-center gap-3 text-sm text-[#0A0A0A]">
-                <iconify-icon icon="solar:check-circle-linear" className="text-[#FF4D00] text-lg"></iconify-icon> Unlimited Workflows
+                <iconify-icon icon="solar:check-circle-linear" className="text-[#FF4D00] text-lg"></iconify-icon> Weekly iteration cycles
               </li>
               <li className="flex items-center gap-3 text-sm text-[#0A0A0A]">
-                <iconify-icon icon="solar:check-circle-linear" className="text-[#FF4D00] text-lg"></iconify-icon> Priority SLA Support
+                <iconify-icon icon="solar:check-circle-linear" className="text-[#FF4D00] text-lg"></iconify-icon> Monitoring + fixes
               </li>
               <li className="flex items-center gap-3 text-sm text-[#0A0A0A]">
-                <iconify-icon icon="solar:check-circle-linear" className="text-[#FF4D00] text-lg"></iconify-icon> Weekly Strategy Calls
+                <iconify-icon icon="solar:check-circle-linear" className="text-[#FF4D00] text-lg"></iconify-icon> New workflows each month
+              </li>
+              <li className="flex items-center gap-3 text-sm text-[#0A0A0A]">
+                <iconify-icon icon="solar:check-circle-linear" className="text-[#FF4D00] text-lg"></iconify-icon> Quarterly roadmap review
+              </li>
+              <li className="flex items-center gap-3 text-sm text-[#0A0A0A]">
+                <iconify-icon icon="solar:check-circle-linear" className="text-[#FF4D00] text-lg"></iconify-icon> Priority support
               </li>
             </ul>
-            <a href="#audit" className="block w-full py-4 min-h-[48px] border-2 border-black bg-white text-center text-sm font-bold text-black hover:bg-black hover:text-white transition-colors uppercase touch-manipulation">Apply for Partner</a>
+            <a href="#contact" className="block w-full py-4 min-h-[48px] border-2 border-black bg-white text-center text-sm font-bold text-black hover:bg-black hover:text-white transition-colors uppercase touch-manipulation">Book a call</a>
           </div>
         </div>
-        </div>
-      </section>
 
-      {/* Testimonials */}
-      <section className="py-12 sm:py-16 px-4 sm:px-6 md:px-12 bg-[#F3F1ED] border-t-2 border-black">
-        <div className="max-w-[1920px] mx-auto">
+        {/* Add-ons Section */}
+        <div className="mt-12 sm:mt-16">
+          <h3 className="text-2xl sm:text-3xl font-bold text-[#0A0A0A] mb-6">Add-ons</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
-            <div className="flex gap-3 sm:gap-4 p-6 sm:p-8 bg-white border-2 border-black">
-              <div className="text-[#FF4D00] text-4xl font-serif leading-none">&quot;</div>
-              <div>
-                <p className="text-[#0A0A0A] text-base leading-relaxed mb-6">Layer Zero didn&apos;t just add a tool, they re-architected our entire outbound motion. We are processing 10x the volume with zero headcount increase.</p>
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-black flex items-center justify-center text-xs text-white font-bold">DT</div>
-                  <div>
-                    <div className="text-sm font-bold text-[#0A0A0A]">David T.</div>
-                    <div className="text-xs text-[#666666]">CTO, FinTech Scaleup</div>
-                  </div>
-                </div>
+            {/* Security Hardening Pack */}
+            <div className="bg-white border-2 border-black p-6 sm:p-8">
+              <div className="mb-4">
+                <h4 className="text-xl font-bold text-[#0A0A0A] mb-2">Security Hardening Pack</h4>
+                <p className="text-sm text-[#666666] leading-relaxed">Enterprise-grade security controls for production systems.</p>
               </div>
+              <ul className="space-y-2">
+                <li className="flex items-center gap-2 text-sm text-[#0A0A0A]">
+                  <iconify-icon icon="solar:check-circle-linear" className="text-[#FF4D00]"></iconify-icon> Least privilege access controls
+                </li>
+                <li className="flex items-center gap-2 text-sm text-[#0A0A0A]">
+                  <iconify-icon icon="solar:check-circle-linear" className="text-[#FF4D00]"></iconify-icon> Secret management
+                </li>
+                <li className="flex items-center gap-2 text-sm text-[#0A0A0A]">
+                  <iconify-icon icon="solar:check-circle-linear" className="text-[#FF4D00]"></iconify-icon> Audit logging
+                </li>
+              </ul>
             </div>
-            <div className="flex gap-3 sm:gap-4 p-6 sm:p-8 bg-white border-2 border-black">
-              <div className="text-[#FF4D00] text-4xl font-serif leading-none">&quot;</div>
-              <div>
-                <p className="text-[#0A0A0A] text-base leading-relaxed mb-6">The documentation and handover process was incredible. They don&apos;t just build black boxes; they teach you how to drive the machine.</p>
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-black flex items-center justify-center text-xs text-white font-bold">SL</div>
-                  <div>
-                    <div className="text-sm font-bold text-[#0A0A0A]">Sarah L.</div>
-                    <div className="text-xs text-[#666666]">Founder, Agency</div>
-                  </div>
-                </div>
+
+            {/* Executive Workflow Suite */}
+            <div className="bg-white border-2 border-black p-6 sm:p-8">
+              <div className="mb-4">
+                <h4 className="text-xl font-bold text-[#0A0A0A] mb-2">Executive Workflow Suite</h4>
+                <p className="text-sm text-[#666666] leading-relaxed">Personal automation for executives and founders.</p>
               </div>
+              <ul className="space-y-2">
+                <li className="flex items-center gap-2 text-sm text-[#0A0A0A]">
+                  <iconify-icon icon="solar:check-circle-linear" className="text-[#FF4D00]"></iconify-icon> Inbox triage automation
+                </li>
+                <li className="flex items-center gap-2 text-sm text-[#0A0A0A]">
+                  <iconify-icon icon="solar:check-circle-linear" className="text-[#FF4D00]"></iconify-icon> Scheduling automation
+                </li>
+                <li className="flex items-center gap-2 text-sm text-[#0A0A0A]">
+                  <iconify-icon icon="solar:check-circle-linear" className="text-[#FF4D00]"></iconify-icon> Briefings + summaries
+                </li>
+                <li className="flex items-center gap-2 text-sm text-[#0A0A0A]">
+                  <iconify-icon icon="solar:check-circle-linear" className="text-[#FF4D00]"></iconify-icon> Proposal follow-ups
+                </li>
+              </ul>
             </div>
           </div>
+        </div>
         </div>
       </section>
 
       {/* Contact Section */}
-      <section id="audit" className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 md:px-12 bg-[#F3F1ED]">
+      <section id="contact" className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 md:px-12 bg-[#F3F1ED]">
         <div className="max-w-[1920px] mx-auto">
           <div className="border-2 border-black overflow-hidden bg-white">
             <div className="grid grid-cols-1 lg:grid-cols-2">
               {/* Left */}
               <div className="p-6 sm:p-10 md:p-16 border-b-2 lg:border-b-0 lg:border-r-2 border-black relative">
-                <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 tracking-tight text-[#0A0A0A]">Scale without chaos.</h2>
+                <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 tracking-tight text-[#0A0A0A]">Build faster.</h2>
                 <p className="text-[#666666] mb-8 sm:mb-10 text-base sm:text-lg leading-relaxed max-w-sm">
-                  Ready to stop manual work? Fill out the intake form to see if your infrastructure is compatible with our automation stack.
+                  Ready to eliminate manual work? Book a call to see if your stack is compatible.
                 </p>
                 
                 <div className="space-y-6">
@@ -162,8 +196,8 @@ export default function PricingSection() {
                       <iconify-icon icon="solar:code-scan-linear" className="text-2xl"></iconify-icon>
                     </div>
                     <div>
-                      <h4 className="text-base font-bold text-[#0A0A0A]">Technical Review</h4>
-                      <p className="text-sm text-[#666666]">We analyze your API capabilities.</p>
+                      <h4 className="text-base font-bold text-[#0A0A0A]">Stack Analysis</h4>
+                      <p className="text-sm text-[#666666]">We map your API capabilities.</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
@@ -171,8 +205,8 @@ export default function PricingSection() {
                       <iconify-icon icon="solar:presentation-graph-linear" className="text-2xl"></iconify-icon>
                     </div>
                     <div>
-                      <h4 className="text-base font-bold text-[#0A0A0A]">Efficiency Roadmap</h4>
-                      <p className="text-sm text-[#666666]">You receive a PDF architecture map.</p>
+                      <h4 className="text-base font-bold text-[#0A0A0A]">Build-Ready Scope</h4>
+                      <p className="text-sm text-[#666666]">You receive a detailed architecture plan.</p>
                     </div>
                   </div>
                 </div>
@@ -248,7 +282,7 @@ export default function PricingSection() {
                     type="submit"
                     className="w-full bg-[#F3F1ED] text-black font-bold text-sm py-4 hover:bg-white transition-colors mt-6 uppercase tracking-wider touch-manipulation min-h-[48px]"
                   >
-                    Initialize Audit
+                    Book a call
                   </button>
                   <p className="text-xs text-white/50 text-center mt-3">By clicking above, you agree to our Terms of Service.</p>
                 </form>
