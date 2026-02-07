@@ -13,26 +13,26 @@ export default function ArchitectureGrid() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 auto-rows-[280px] sm:auto-rows-[300px]">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 md:auto-rows-[300px]">
         
         {/* Card 1: Growth */}
-        <div className="group relative bg-white border-2 border-black p-6 sm:p-8 flex flex-col justify-between overflow-hidden hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all cursor-pointer">
-          <div className="absolute top-0 right-0 p-3 opacity-5 group-hover:opacity-10 transition-opacity">
+        <div className="group relative bg-white border-2 border-black p-5 sm:p-6 md:p-8 flex flex-col overflow-hidden hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all cursor-pointer md:min-h-[280px]">
+          <div className="absolute top-0 right-0 p-3 opacity-5 group-hover:opacity-10 transition-opacity pointer-events-none">
             <iconify-icon icon="solar:graph-new-up-linear" width="100"></iconify-icon>
           </div>
-          <div className="z-10">
-            <div className="w-12 h-12 bg-[#FF4D00] flex items-center justify-center mb-4 text-white">
+          <div className="z-10 flex-1">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#FF4D00] flex items-center justify-center mb-3 sm:mb-4 text-white">
               <iconify-icon icon="solar:rocket-2-linear" width="24"></iconify-icon>
             </div>
-            <h3 className="text-2xl font-bold mb-2 text-[#0A0A0A]">Growth Engine</h3>
-            <p className="text-sm text-[#666666] leading-relaxed">Multi-channel outbound systems. AI agents scrape, enrich, and qualify leads 24/7 before your sales team wakes up.</p>
+            <h3 className="text-xl sm:text-2xl font-bold mb-2 sm:mb-3 text-[#0A0A0A]">Growth Engine</h3>
+            <p className="text-sm sm:text-base text-[#666666] leading-relaxed">Multi-channel outbound systems. AI agents scrape, enrich, and qualify leads 24/7 before your sales team wakes up.</p>
           </div>
-          <div className="mt-4 pt-4 border-t border-black/10">
+          <div className="mt-4 sm:mt-5 pt-4 border-t border-black/10 z-10">
             <ul className="space-y-2">
-              <li className="flex items-center gap-2 text-xs text-[#0A0A0A] font-mono">
+              <li className="flex items-center gap-2 text-xs sm:text-sm text-[#0A0A0A] font-mono">
                 <span className="text-[#FF4D00]">+</span> Waterfall Enrichment
               </li>
-              <li className="flex items-center gap-2 text-xs text-[#0A0A0A] font-mono">
+              <li className="flex items-center gap-2 text-xs sm:text-sm text-[#0A0A0A] font-mono">
                 <span className="text-[#FF4D00]">+</span> Personalized Sequencing
               </li>
             </ul>
@@ -40,9 +40,9 @@ export default function ArchitectureGrid() {
         </div>
 
         {/* Card 2: Ops (Featured - Large) */}
-        <div className="md:col-span-2 group relative bg-[#0A0A0A] border-2 border-black p-6 sm:p-8 flex flex-col justify-between overflow-hidden hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all cursor-pointer">
+        <div className="md:col-span-2 group relative bg-[#0A0A0A] border-2 border-black p-5 sm:p-6 md:p-8 flex flex-col overflow-hidden hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all cursor-pointer md:min-h-[320px]">
           {/* Visual Background Element */}
-          <div className="absolute inset-y-0 right-0 w-1/2 mask-sides opacity-10 hidden md:block">
+          <div className="absolute inset-y-0 right-0 w-1/2 mask-sides opacity-10 hidden md:block pointer-events-none">
             <div className="space-y-2 font-mono text-[10px] text-white/50 pt-8">
               <p>&gt; Initiating onboarding.js...</p>
               <p>&gt; Stripe webhook received_</p>
@@ -52,39 +52,39 @@ export default function ArchitectureGrid() {
             </div>
           </div>
 
-          <div className="z-10 max-w-md">
-            <div className="w-12 h-12 bg-[#FF4D00] flex items-center justify-center mb-4 text-white">
+          <div className="z-10 max-w-md flex-1">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#FF4D00] flex items-center justify-center mb-3 sm:mb-4 text-white">
               <iconify-icon icon="solar:cpu-bolt-linear" width="24"></iconify-icon>
             </div>
-            <h3 className="text-3xl font-bold text-[#F3F1ED] mb-3">Operations Autopilot</h3>
-            <p className="text-base text-[#F3F1ED]/70 mb-6 leading-relaxed">
+            <h3 className="text-2xl sm:text-3xl font-bold text-[#F3F1ED] mb-2 sm:mb-3">Operations Autopilot</h3>
+            <p className="text-sm sm:text-base text-[#F3F1ED]/70 mb-4 sm:mb-6 leading-relaxed">
               The silent engine of your business. We automate the &quot;boring&quot; work: invoicing, onboarding, project setup, and reporting. Turn 10 hours of admin into 0.
             </p>
-            <div className="flex gap-2">
-              <span className="px-3 py-1 border border-white/20 text-[10px] text-[#F3F1ED] font-mono uppercase">n8n Orchestration</span>
-              <span className="px-3 py-1 border border-white/20 text-[10px] text-[#F3F1ED] font-mono uppercase">Custom Python</span>
+            <div className="flex flex-wrap gap-2">
+              <span className="px-2 sm:px-3 py-1 border border-white/20 text-[9px] sm:text-[10px] text-[#F3F1ED] font-mono uppercase">n8n Orchestration</span>
+              <span className="px-2 sm:px-3 py-1 border border-white/20 text-[9px] sm:text-[10px] text-[#F3F1ED] font-mono uppercase">Custom Python</span>
             </div>
           </div>
         </div>
 
         {/* Card 3: Data */}
-        <div className="group relative bg-white border-2 border-black p-6 sm:p-8 flex flex-col justify-between overflow-hidden hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all cursor-pointer">
-          <div className="absolute bottom-0 right-0 p-3 opacity-5 group-hover:opacity-10 transition-opacity rotate-12 translate-y-4">
+        <div className="group relative bg-white border-2 border-black p-5 sm:p-6 md:p-8 flex flex-col overflow-hidden hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all cursor-pointer md:min-h-[280px]">
+          <div className="absolute bottom-0 right-0 p-3 opacity-5 group-hover:opacity-10 transition-opacity rotate-12 translate-y-4 pointer-events-none">
             <iconify-icon icon="solar:database-linear" width="120"></iconify-icon>
           </div>
-          <div className="z-10">
-            <div className="w-12 h-12 bg-[#FF4D00] flex items-center justify-center mb-4 text-white">
+          <div className="z-10 flex-1">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#FF4D00] flex items-center justify-center mb-3 sm:mb-4 text-white">
               <iconify-icon icon="solar:server-square-linear" width="24"></iconify-icon>
             </div>
-            <h3 className="text-2xl font-bold mb-2 text-[#0A0A0A]">Data Foundry</h3>
-            <p className="text-sm text-[#666666] leading-relaxed">Unify your fragmented tools. We build a central database (Supabase/Postgres) that feeds clean data to your dashboards.</p>
+            <h3 className="text-xl sm:text-2xl font-bold mb-2 sm:mb-3 text-[#0A0A0A]">Data Foundry</h3>
+            <p className="text-sm sm:text-base text-[#666666] leading-relaxed">Unify your fragmented tools. We build a central database (Supabase/Postgres) that feeds clean data to your dashboards.</p>
           </div>
-          <div className="mt-4 pt-4 border-t border-black/10">
+          <div className="mt-4 sm:mt-5 pt-4 border-t border-black/10 z-10">
             <ul className="space-y-2">
-              <li className="flex items-center gap-2 text-xs text-[#0A0A0A] font-mono">
+              <li className="flex items-center gap-2 text-xs sm:text-sm text-[#0A0A0A] font-mono">
                 <span className="text-[#FF4D00]">+</span> ETL Pipelines
               </li>
-              <li className="flex items-center gap-2 text-xs text-[#0A0A0A] font-mono">
+              <li className="flex items-center gap-2 text-xs sm:text-sm text-[#0A0A0A] font-mono">
                 <span className="text-[#FF4D00]">+</span> Real-time BI Dashboards
               </li>
             </ul>
@@ -92,19 +92,19 @@ export default function ArchitectureGrid() {
         </div>
 
         {/* Card 4: Support Agents */}
-        <div className="md:col-span-2 group relative bg-white border-2 border-black p-6 sm:p-8 flex flex-row items-center justify-between overflow-hidden hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all cursor-pointer">
-          <div className="z-10 max-w-md">
-            <div className="flex items-center gap-3 mb-3">
-              <div className="w-12 h-12 bg-[#FF4D00] flex items-center justify-center text-white">
+        <div className="md:col-span-2 group relative bg-white border-2 border-black p-5 sm:p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center justify-between overflow-hidden hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all cursor-pointer md:min-h-[240px]">
+          <div className="z-10 w-full md:max-w-md">
+            <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-[#FF4D00] flex items-center justify-center text-white flex-shrink-0">
                 <iconify-icon icon="solar:chat-round-line-linear" width="24"></iconify-icon>
               </div>
-              <h3 className="text-2xl font-bold text-[#0A0A0A]">Knowledge Agents</h3>
+              <h3 className="text-xl sm:text-2xl font-bold text-[#0A0A0A]">Knowledge Agents</h3>
             </div>
-            <p className="text-sm text-[#666666] leading-relaxed">
+            <p className="text-sm sm:text-base text-[#666666] leading-relaxed">
               Internal bots trained on your Wiki/Notion/Slack history. Ask questions, get answers instantly. No more &quot;where is that file?&quot;
             </p>
           </div>
-          <div className="hidden sm:flex gap-4">
+          <div className="hidden md:flex gap-4 mt-4 md:mt-0 flex-shrink-0">
             <div className="w-14 h-14 border-2 border-black flex items-center justify-center relative bg-[#F3F1ED]">
               <iconify-icon icon="simple-icons:slack" className="text-black text-xl"></iconify-icon>
               <div className="absolute -top-1 -right-1 w-3 h-3 bg-[#FF4D00] border-2 border-white"></div>

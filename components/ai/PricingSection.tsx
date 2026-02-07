@@ -213,7 +213,7 @@ export default function PricingSection() {
 
                 <div className="mt-16 pt-8 border-t-2 border-black">
                   <p className="text-xs text-[#666666] font-mono mb-2 uppercase tracking-wider">Direct Line</p>
-                  <a href="mailto:hello@layerzero.studio" className="text-[#0A0A0A] hover:text-[#FF4D00] transition-colors font-bold text-lg">hello@layerzero.studio</a>
+                  <a href="mailto:studiolabs0x@gmail.com" className="text-[#0A0A0A] hover:text-[#FF4D00] transition-colors font-bold text-lg">studiolabs0x@gmail.com</a>
                 </div>
               </div>
 
