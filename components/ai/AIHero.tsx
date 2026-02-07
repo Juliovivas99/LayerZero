@@ -1,6 +1,14 @@
-import UnicornScene from "unicornstudio-react/next";
+'use client';
 
-export default function AIHero() {
+import UnicornScene from "unicornstudio-react/next";
+import { useContactModal } from '@/components/ContactModalProvider';
+
+interface AIHeroProps {
+  showCTAs?: boolean;
+}
+
+export default function AIHero({ showCTAs = true }: AIHeroProps) {
+  const { openContactModal } = useContactModal();
   return (
     <section className="relative pt-24 sm:pt-32 md:pt-40 pb-28 sm:pb-32 md:pb-40 overflow-hidden bg-[#050505] text-zinc-400">
       {/* Unicorn Studio WebGL Background */}
@@ -40,14 +48,16 @@ export default function AIHero() {
           </p>
 
           {/* CTAs */}
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-center w-full sm:w-auto px-4 sm:px-0">
-            <a href="#contact" className="w-full sm:w-auto min-h-[48px] h-12 px-6 sm:px-8 rounded-lg bg-[#f97316] text-white font-medium text-sm flex items-center justify-center hover:bg-[#ea580c] transition-all shadow-[0_0_30px_-5px_rgba(249,115,22,0.5)] touch-manipulation">
-              Book a call
-            </a>
-            <a href="#pricing" className="w-full sm:w-auto min-h-[48px] h-12 px-6 sm:px-8 rounded-lg border border-white/10 bg-white/5 text-white font-medium text-sm flex items-center justify-center hover:bg-white/10 transition-all backdrop-blur-md touch-manipulation">
-              See pricing
-            </a>
-          </div>
+          {showCTAs && (
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-center w-full sm:w-auto px-4 sm:px-0">
+              <button onClick={openContactModal} className="w-full sm:w-auto min-h-[48px] h-12 px-6 sm:px-8 rounded-lg bg-[#f97316] text-white font-medium text-sm flex items-center justify-center hover:bg-[#ea580c] transition-all shadow-[0_0_30px_-5px_rgba(249,115,22,0.5)] touch-manipulation">
+                Book a call
+              </button>
+              <a href="#pricing" className="w-full sm:w-auto min-h-[48px] h-12 px-6 sm:px-8 rounded-lg border border-white/10 bg-white/5 text-white font-medium text-sm flex items-center justify-center hover:bg-white/10 transition-all backdrop-blur-md touch-manipulation">
+                See pricing
+              </a>
+            </div>
+          )}
 
           {/* Code Visual (The "Terminal") */}
           <div className="mt-6 sm:mt-10 md:mt-16 mb-8 sm:mb-12 w-full max-w-3xl rounded-lg sm:rounded-xl border border-white/10 bg-[#0A0A0A] shadow-2xl overflow-hidden relative group">

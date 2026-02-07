@@ -183,7 +183,7 @@ Build results:
 - React Strict Mode enabled
 - Compression enabled
 - PoweredBy header disabled for security
-- Region set to San Francisco (sfo1)
+- Region set to Miami (mia1)
 
 ## Support
 

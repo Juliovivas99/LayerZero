@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import { ContactModalProvider } from "@/components/ContactModalProvider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -37,7 +38,9 @@ export default function RootLayout({
         <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js" async></script>
       </head>
       <body className={`${inter.className} overflow-x-hidden antialiased`}>
-        {children}
+        <ContactModalProvider>
+          {children}
+        </ContactModalProvider>
       </body>
     </html>
   );

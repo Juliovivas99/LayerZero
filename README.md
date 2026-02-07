@@ -74,4 +74,4 @@ Email: hello@layerzero.studio
 
 ---
 
-© 2026 Layer Zero Studio. Made in San Francisco.
+© 2026 Layer Zero Studio. Made in Miami.
