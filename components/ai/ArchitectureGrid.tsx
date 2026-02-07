@@ -61,7 +61,7 @@ export default function ArchitectureGrid() {
               The silent engine of your business. We automate the &quot;boring&quot; work: invoicing, onboarding, project setup, and reporting. Turn 10 hours of admin into 0.
             </p>
             <div className="flex flex-wrap gap-2">
-              <span className="px-2 sm:px-3 py-1 border border-white/20 text-[9px] sm:text-[10px] text-[#F3F1ED] font-mono uppercase">n8n Orchestration</span>
+              <span className="px-2 sm:px-3 py-1 border border-white/20 text-[9px] sm:text-[10px] text-[#F3F1ED] font-mono uppercase">OpenClaw</span>
               <span className="px-2 sm:px-3 py-1 border border-white/20 text-[9px] sm:text-[10px] text-[#F3F1ED] font-mono uppercase">Custom Python</span>
             </div>
           </div>
