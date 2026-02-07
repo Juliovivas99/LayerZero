@@ -98,7 +98,7 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
             Book a call
           </h2>
           <p className="text-[#F3F1ED]/70 mb-8 text-base leading-relaxed">
-            Ready to eliminate manual work? Fill out the form below and we'll get back to you within 24 hours.
+            Ready to eliminate manual work? Fill out the form below and we&apos;ll get back to you within 24 hours.
           </p>
 
           <form className="space-y-5" onSubmit={handleSubmit}>

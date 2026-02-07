@@ -135,7 +135,7 @@ export default function UseCases() {
             Ready to Build Your System?
           </h3>
           <p className="text-xs sm:text-sm text-[#F3F1ED]/70 mb-4 max-w-xl mx-auto">
-            Book a free strategy session to see what's possible for your business.
+            Book a free strategy session to see what&apos;s possible for your business.
           </p>
           <button 
             onClick={openContactModal}

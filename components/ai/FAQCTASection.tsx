@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useContactModal } from '@/components/ContactModalProvider';
 
 export default function FAQCTASection() {
@@ -12,7 +13,7 @@ export default function FAQCTASection() {
           Still Have Questions?
         </h2>
         <p className="text-base sm:text-lg text-[#F3F1ED]/70 mb-8 max-w-2xl mx-auto leading-relaxed">
-          Book a free 30-minute consultation. We'll answer your specific questions and help you understand what's possible for your business.
+          Book a free 30-minute consultation. We&apos;ll answer your specific questions and help you understand what&apos;s possible for your business.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button 
@@ -21,12 +22,12 @@ export default function FAQCTASection() {
           >
             Book a call
           </button>
-          <a 
+          <Link 
             href="/" 
             className="inline-block px-8 py-4 border-2 border-white/10 bg-white/5 text-white font-bold hover:bg-white/10 transition-colors uppercase text-sm"
           >
             View all services
-          </a>
+          </Link>
         </div>
       </div>
     </section>

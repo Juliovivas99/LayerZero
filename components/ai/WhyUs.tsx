@@ -8,7 +8,7 @@ export default function WhyUs() {
             Why Layer Zero Studio
           </h2>
           <p className="text-base sm:text-lg text-[#666666] max-w-2xl mx-auto">
-            We're not another chatbot wrapper or automation agency. We're infrastructure engineers who build production-grade AI systems.
+            We&apos;re not another chatbot wrapper or automation agency. We&apos;re infrastructure engineers who build production-grade AI systems.
           </p>
         </div>
 
@@ -93,7 +93,7 @@ export default function WhyUs() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2">
                 <span className="text-red-500 mt-1">✗</span>
-                <span className="text-[#666666]">$50k-200k+ for "discovery"</span>
+                <span className="text-[#666666]">$50k-200k+ for &quot;discovery&quot;</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-red-500 mt-1">✗</span>
@@ -158,7 +158,7 @@ export default function WhyUs() {
             </div>
             <h4 className="font-bold mb-2 text-[#0A0A0A]">Fast Execution</h4>
             <p className="text-sm text-[#666666] leading-relaxed">
-              White-glove deployments in hours. Custom builds in weeks, not months. We don't do "discovery phases"—we build and iterate.
+              White-glove deployments in hours. Custom builds in weeks, not months. We don&apos;t do &quot;discovery phases&quot;—we build and iterate.
             </p>
           </div>
 
@@ -168,7 +168,7 @@ export default function WhyUs() {
         <div className="mt-16 text-center border-2 border-black p-8 sm:p-12 bg-[#F3F1ED]">
           <h3 className="text-2xl sm:text-3xl font-bold mb-4 text-[#0A0A0A]">Technology Agnostic</h3>
           <p className="text-base text-[#666666] mb-8 max-w-3xl mx-auto leading-relaxed">
-            We're not married to any single tool or framework. OpenClaw for exec workflows, Ollama for local LLMs, custom Python for complex pipelines, LangChain for RAG systems, FastAPI for APIs, Postgres for databases. We pick the right tool for your use case.
+            We&apos;re not married to any single tool or framework. OpenClaw for exec workflows, Ollama for local LLMs, custom Python for complex pipelines, LangChain for RAG systems, FastAPI for APIs, Postgres for databases. We pick the right tool for your use case.
           </p>
           <div className="flex flex-wrap justify-center gap-4 text-sm">
             <span className="px-4 py-2 border-2 border-black bg-white font-mono">OpenClaw</span>
