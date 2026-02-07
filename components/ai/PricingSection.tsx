@@ -27,7 +27,7 @@ export default function PricingSection() {
                 <span className="ml-2 text-sm text-[#666666]">one-time</span>
               </div>
             </div>
-            <p className="text-sm text-[#666666] mb-8 min-h-[60px] leading-relaxed">A focused working session to map workflows, define success metrics, and produce a build-ready scope.</p>
+            <p className="text-sm text-[#666666] mb-8 min-h-[60px] leading-relaxed">A focused 90-minute working session to map workflows, define success metrics, and produce a build-ready scope.</p>
             <ul className="space-y-3 mb-8">
               <li className="flex items-center gap-3 text-sm text-[#0A0A0A]">
                 <iconify-icon icon="solar:check-circle-linear" className="text-[#FF4D00] text-lg"></iconify-icon> Workflow map
@@ -45,7 +45,7 @@ export default function PricingSection() {
                 <iconify-icon icon="solar:check-circle-linear" className="text-[#FF4D00] text-lg"></iconify-icon> Build plan + timeline
               </li>
             </ul>
-            <button onClick={openContactModal} className="block w-full py-4 min-h-[48px] border-2 border-black bg-white text-center text-sm font-bold text-black hover:bg-black hover:text-white transition-colors uppercase touch-manipulation">Book a call</button>
+            <button onClick={openContactModal} className="block w-full py-4 min-h-[48px] border-2 border-black bg-white text-center text-sm font-bold text-black hover:bg-black hover:text-white transition-colors uppercase touch-manipulation">Book Blueprint Session</button>
           </div>
 
           {/* Tier 2 */}
@@ -59,7 +59,7 @@ export default function PricingSection() {
                 <span className="ml-2 text-sm text-[#F3F1ED]/70">start price</span>
               </div>
             </div>
-            <p className="text-sm text-[#F3F1ED]/70 mb-8 min-h-[60px] leading-relaxed">Build and deploy production automations integrated into your existing stack.</p>
+            <p className="text-sm text-[#F3F1ED]/70 mb-8 min-h-[60px] leading-relaxed">Build and deploy production automations integrated into your existing stack. Final price based on complexity.</p>
             <ul className="space-y-3 mb-8">
               <li className="flex items-center gap-3 text-sm text-[#F3F1ED]">
                 <iconify-icon icon="solar:check-circle-bold" className="text-[#FF4D00] text-lg"></iconify-icon> Custom workflow automation (code-first)
@@ -80,7 +80,7 @@ export default function PricingSection() {
                 <iconify-icon icon="solar:check-circle-bold" className="text-[#FF4D00] text-lg"></iconify-icon> 30-day hypercare
               </li>
             </ul>
-            <button onClick={openContactModal} className="block w-full py-4 min-h-[48px] bg-[#F3F1ED] text-center text-sm font-bold text-black hover:bg-white transition-colors uppercase touch-manipulation">Book a call</button>
+            <button onClick={openContactModal} className="block w-full py-4 min-h-[48px] bg-[#F3F1ED] text-center text-sm font-bold text-black hover:bg-white transition-colors uppercase touch-manipulation">Get Custom Quote</button>
           </div>
 
           {/* Tier 3 */}
@@ -93,7 +93,7 @@ export default function PricingSection() {
                 <span className="ml-2 text-sm text-[#666666]">/month</span>
               </div>
             </div>
-            <p className="text-sm text-[#666666] mb-8 min-h-[60px] leading-relaxed">Ongoing engineering + optimization. Your systems evolve as your business grows.</p>
+            <p className="text-sm text-[#666666] mb-8 min-h-[60px] leading-relaxed">Ongoing engineering + optimization. Your systems evolve as your business grows. Fixed monthly retainer.</p>
             <ul className="space-y-3 mb-8">
               <li className="flex items-center gap-3 text-sm text-[#0A0A0A]">
                 <iconify-icon icon="solar:check-circle-linear" className="text-[#FF4D00] text-lg"></iconify-icon> Weekly iteration cycles
@@ -111,7 +111,7 @@ export default function PricingSection() {
                 <iconify-icon icon="solar:check-circle-linear" className="text-[#FF4D00] text-lg"></iconify-icon> Priority support
               </li>
             </ul>
-            <button onClick={openContactModal} className="block w-full py-4 min-h-[48px] border-2 border-black bg-white text-center text-sm font-bold text-black hover:bg-black hover:text-white transition-colors uppercase touch-manipulation">Book a call</button>
+            <button onClick={openContactModal} className="block w-full py-4 min-h-[48px] border-2 border-black bg-white text-center text-sm font-bold text-black hover:bg-black hover:text-white transition-colors uppercase touch-manipulation">Apply for Partnership</button>
           </div>
         </div>
 

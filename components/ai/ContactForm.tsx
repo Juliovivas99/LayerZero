@@ -23,28 +23,28 @@ export default function ContactForm() {
           <div className="grid grid-cols-1 lg:grid-cols-2">
             {/* Left */}
             <div className="p-6 sm:p-10 md:p-16 border-b-2 lg:border-b-0 lg:border-r-2 border-black relative">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 tracking-tight text-[#0A0A0A]">Build faster.</h2>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 tracking-tight text-[#0A0A0A]">Not sure which service fits?</h2>
               <p className="text-[#666666] mb-8 sm:mb-10 text-base sm:text-lg leading-relaxed max-w-sm">
-                Ready to eliminate manual work? Book a call to see if your stack is compatible.
+                Tell us about your needs and we&apos;ll recommend the right starting point.
               </p>
               
               <div className="space-y-6">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 border-2 border-black bg-[#F3F1ED] flex items-center justify-center text-[#FF4D00]">
-                    <iconify-icon icon="solar:code-scan-linear" className="text-2xl"></iconify-icon>
+                    <iconify-icon icon="solar:chat-round-line-linear" className="text-2xl"></iconify-icon>
                   </div>
                   <div>
-                    <h4 className="text-base font-bold text-[#0A0A0A]">Stack Analysis</h4>
-                    <p className="text-sm text-[#666666]">We map your API capabilities.</p>
+                    <h4 className="text-base font-bold text-[#0A0A0A]">Quick Consultation</h4>
+                    <p className="text-sm text-[#666666]">We&apos;ll respond within 24 hours.</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 border-2 border-black bg-[#F3F1ED] flex items-center justify-center text-[#FF4D00]">
-                    <iconify-icon icon="solar:presentation-graph-linear" className="text-2xl"></iconify-icon>
+                    <iconify-icon icon="solar:list-check-linear" className="text-2xl"></iconify-icon>
                   </div>
                   <div>
-                    <h4 className="text-base font-bold text-[#0A0A0A]">Build-Ready Scope</h4>
-                    <p className="text-sm text-[#666666]">You receive a detailed architecture plan.</p>
+                    <h4 className="text-base font-bold text-[#0A0A0A]">Service Recommendation</h4>
+                    <p className="text-sm text-[#666666]">Get clarity on the best approach.</p>
                   </div>
                 </div>
               </div>
@@ -120,9 +120,9 @@ export default function ContactForm() {
                   type="submit"
                   className="w-full bg-[#F3F1ED] text-black font-bold text-sm py-4 hover:bg-white transition-colors mt-6 uppercase tracking-wider touch-manipulation min-h-[48px]"
                 >
-                  Submit Request
+                  Get Recommendation
                 </button>
-                <p className="text-xs text-white/50 text-center mt-3">By clicking above, you agree to our Terms of Service.</p>
+                <p className="text-xs text-white/50 text-center mt-3">This is optional. You can purchase services directly above.</p>
               </form>
             </div>
           </div>
