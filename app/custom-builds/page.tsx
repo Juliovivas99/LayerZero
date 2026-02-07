@@ -39,7 +39,7 @@ export default function CustomBuildsPage() {
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-white">Proprietary Business Logic</h3>
                 <p className="text-sm text-zinc-300 mb-4 leading-relaxed">
-                  Your revenue operations have unique steps that can't be templated. We encode your secret sauce into production-grade code.
+                  Your revenue operations have unique steps that can&apos;t be templated. We encode your secret sauce into production-grade code.
                 </p>
                 <p className="text-xs text-zinc-400 font-mono">
                   Example: Custom lead scoring that combines Clearbit data, LinkedIn signals, and internal buyer intent metrics.
