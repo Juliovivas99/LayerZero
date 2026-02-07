@@ -106,7 +106,7 @@ export default function EnterpriseDeployment() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             
             {/* In-Person */}
-            <div className="bg-white border-2 border-[#f97316] p-6 text-[#0A0A0A] relative">
+            <div className="bg-white border-2 border-[#f97316] p-6 text-[#0A0A0A] relative transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-[#f97316]/20 hover:-translate-y-2">
               <div className="absolute -top-3 left-6 bg-[#f97316] text-white text-xs font-bold px-3 py-1 uppercase">Miami</div>
               <h4 className="text-2xl font-bold mb-3 mt-2">In-Person Setup</h4>
               <p className="text-sm text-[#666666] mb-6">We come to your office. First system + hardening + 14-day hypercare.</p>
@@ -133,7 +133,7 @@ export default function EnterpriseDeployment() {
             </div>
 
             {/* Remote */}
-            <div className="bg-white border-2 border-black p-6 text-[#0A0A0A]">
+            <div className="bg-white border-2 border-black p-6 text-[#0A0A0A] transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-black/20 hover:-translate-y-2 hover:border-[#f97316]">
               <h4 className="text-2xl font-bold mb-3">Remote Setup</h4>
               <p className="text-sm text-[#666666] mb-6">Deploy over video call on your hardware or VPS. Available worldwide.</p>
               <div className="text-4xl font-bold mb-6">$1,200</div>
@@ -159,7 +159,7 @@ export default function EnterpriseDeployment() {
             </div>
 
             {/* Additional Systems */}
-            <div className="bg-white border-2 border-black p-6 text-[#0A0A0A]">
+            <div className="bg-white border-2 border-black p-6 text-[#0A0A0A] transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-black/20 hover:-translate-y-2 hover:border-[#f97316]">
               <h4 className="text-2xl font-bold mb-3">Additional Systems</h4>
               <p className="text-sm text-[#666666] mb-6">Deploy your full exec team or multiple AI infrastructures.</p>
               <div className="text-4xl font-bold mb-6">+$1,200<span className="text-base font-normal text-[#666666]">/ea</span></div>
@@ -334,7 +334,7 @@ export default function EnterpriseDeployment() {
         {/* CTA */}
         <div className="text-center mt-12 sm:mt-16">
           <p className="text-[#F3F1ED]/70 mb-6">
-            Not sure which setup is right for you? Book a free 30-minute consultation.
+            Not sure which setup is right for you? Book a free 15-minute consultation.
           </p>
           <button onClick={openContactModal} className="inline-block px-8 py-4 bg-[#f97316] text-white font-bold hover:bg-[#ea580c] transition-colors uppercase">
             Book a call

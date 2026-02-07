@@ -12,55 +12,27 @@ export default function PricingSection() {
               <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tighter mb-3 sm:mb-4 leading-[0.9]">
                 Engagement<br />Models
               </h2>
-              <p className="text-base sm:text-lg md:text-xl text-[#0A0A0A]">Transparent pricing. No hidden &quot;consulting fees&quot;.</p>
+              <p className="text-base sm:text-lg md:text-xl text-[#0A0A0A]">Transparent pricing. Blueprint included in every build.</p>
             </div>
           </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6">
-          {/* Tier 1 */}
-          <div className="bg-white border-2 border-black p-6 sm:p-8 hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all">
-            <div className="mb-6">
-              <div className="text-xs font-mono text-[#666666] mb-2 uppercase tracking-wider">Design</div>
-              <h3 className="text-3xl font-bold text-[#0A0A0A] mb-4">Systems Blueprint Session</h3>
-              <div className="flex items-baseline">
-                <span className="text-4xl font-bold text-[#0A0A0A]">$995</span>
-                <span className="ml-2 text-sm text-[#666666]">one-time</span>
-              </div>
-            </div>
-            <p className="text-sm text-[#666666] mb-8 min-h-[60px] leading-relaxed">A focused 90-minute working session to map workflows, define success metrics, and produce a build-ready scope.</p>
-            <ul className="space-y-3 mb-8">
-              <li className="flex items-center gap-3 text-sm text-[#0A0A0A]">
-                <iconify-icon icon="solar:check-circle-linear" className="text-[#FF4D00] text-lg"></iconify-icon> Workflow map
-              </li>
-              <li className="flex items-center gap-3 text-sm text-[#0A0A0A]">
-                <iconify-icon icon="solar:check-circle-linear" className="text-[#FF4D00] text-lg"></iconify-icon> Integration plan
-              </li>
-              <li className="flex items-center gap-3 text-sm text-[#0A0A0A]">
-                <iconify-icon icon="solar:check-circle-linear" className="text-[#FF4D00] text-lg"></iconify-icon> Architecture diagram
-              </li>
-              <li className="flex items-center gap-3 text-sm text-[#0A0A0A]">
-                <iconify-icon icon="solar:check-circle-linear" className="text-[#FF4D00] text-lg"></iconify-icon> Prioritized automation backlog
-              </li>
-              <li className="flex items-center gap-3 text-sm text-[#0A0A0A]">
-                <iconify-icon icon="solar:check-circle-linear" className="text-[#FF4D00] text-lg"></iconify-icon> Build plan + timeline
-              </li>
-            </ul>
-            <button onClick={openContactModal} className="block w-full py-4 min-h-[48px] border-2 border-black bg-white text-center text-sm font-bold text-black hover:bg-black hover:text-white transition-colors uppercase touch-manipulation">Book Blueprint Session</button>
-          </div>
-
-          {/* Tier 2 */}
+          {/* Tier 1: Build (Blueprint included) */}
           <div className="relative bg-[#0A0A0A] border-2 border-black p-6 sm:p-8 shadow-[8px_8px_0px_0px_rgba(255,77,0,1)]">
             <div className="absolute top-0 right-0 bg-[#FF4D00] text-white text-xs font-bold px-3 py-1 uppercase">Popular</div>
             <div className="mb-6">
-              <div className="text-xs font-mono text-[#FF4D00] mb-2 uppercase tracking-wider">Build</div>
+              <div className="text-xs font-mono text-[#FF4D00] mb-2 uppercase tracking-wider">Design + Build</div>
               <h3 className="text-3xl font-bold text-[#F3F1ED] mb-4">Autonomous Infrastructure Build</h3>
               <div className="flex items-baseline">
-                <span className="text-4xl font-bold text-[#F3F1ED]">$3,500</span>
+                <span className="text-4xl font-bold text-[#F3F1ED]">$5,000</span>
                 <span className="ml-2 text-sm text-[#F3F1ED]/70">start price</span>
               </div>
             </div>
-            <p className="text-sm text-[#F3F1ED]/70 mb-8 min-h-[60px] leading-relaxed">Build and deploy production automations integrated into your existing stack. Final price based on complexity.</p>
+            <p className="text-sm text-[#F3F1ED]/70 mb-8 min-h-[60px] leading-relaxed">Includes a Systems Blueprint Session plus build and deploy of production automations. Final price based on complexity.</p>
             <ul className="space-y-3 mb-8">
+              <li className="flex items-center gap-3 text-sm text-[#F3F1ED]">
+                <iconify-icon icon="solar:check-circle-bold" className="text-[#FF4D00] text-lg"></iconify-icon> Systems Blueprint Session (workflow map, integration plan, architecture diagram, build plan + timeline)
+              </li>
               <li className="flex items-center gap-3 text-sm text-[#F3F1ED]">
                 <iconify-icon icon="solar:check-circle-bold" className="text-[#FF4D00] text-lg"></iconify-icon> Custom workflow automation (code-first)
               </li>
@@ -83,7 +55,7 @@ export default function PricingSection() {
             <button onClick={openContactModal} className="block w-full py-4 min-h-[48px] bg-[#F3F1ED] text-center text-sm font-bold text-black hover:bg-white transition-colors uppercase touch-manipulation">Get Custom Quote</button>
           </div>
 
-          {/* Tier 3 */}
+          {/* Tier 2: Partnership */}
           <div className="bg-white border-2 border-black p-6 sm:p-8 hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all">
             <div className="mb-6">
               <div className="text-xs font-mono text-[#666666] mb-2 uppercase tracking-wider">Optimize</div>
@@ -110,8 +82,57 @@ export default function PricingSection() {
               <li className="flex items-center gap-3 text-sm text-[#0A0A0A]">
                 <iconify-icon icon="solar:check-circle-linear" className="text-[#FF4D00] text-lg"></iconify-icon> Priority support
               </li>
+              <li className="flex items-center gap-3 text-sm text-[#0A0A0A]">
+                <iconify-icon icon="solar:check-circle-linear" className="text-[#FF4D00] text-lg"></iconify-icon> Performance tuning and optimization
+              </li>
+              <li className="flex items-center gap-3 text-sm text-[#0A0A0A]">
+                <iconify-icon icon="solar:check-circle-linear" className="text-[#FF4D00] text-lg"></iconify-icon> Integration updates as your stack changes
+              </li>
+              <li className="flex items-center gap-3 text-sm text-[#0A0A0A]">
+                <iconify-icon icon="solar:check-circle-linear" className="text-[#FF4D00] text-lg"></iconify-icon> Dedicated Slack or channel
+              </li>
             </ul>
             <button onClick={openContactModal} className="block w-full py-4 min-h-[48px] border-2 border-black bg-white text-center text-sm font-bold text-black hover:bg-black hover:text-white transition-colors uppercase touch-manipulation">Apply for Partnership</button>
+          </div>
+
+          {/* Tier 3: Enterprise / quote */}
+          <div className="bg-white border-2 border-black p-6 sm:p-8 hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transition-all">
+            <div className="mb-6">
+              <div className="text-xs font-mono text-[#666666] mb-2 uppercase tracking-wider">Enterprise</div>
+              <h3 className="text-3xl font-bold text-[#0A0A0A] mb-4">Tailored Engagement</h3>
+              <div className="flex items-baseline gap-2">
+                <span className="text-4xl font-bold text-[#0A0A0A]">Proposal</span>
+                <span className="text-sm text-[#666666]">after discovery</span>
+              </div>
+            </div>
+            <p className="text-sm text-[#666666] mb-8 min-h-[60px] leading-relaxed">Multi-system builds, dedicated capacity, or complex requirements. We learn your needs, then send a clear proposal.</p>
+            <ul className="space-y-3 mb-8">
+              <li className="flex items-center gap-3 text-sm text-[#0A0A0A]">
+                <iconify-icon icon="solar:check-circle-linear" className="text-[#FF4D00] text-lg"></iconify-icon> Multi-workflow and multi-team scope
+              </li>
+              <li className="flex items-center gap-3 text-sm text-[#0A0A0A]">
+                <iconify-icon icon="solar:check-circle-linear" className="text-[#FF4D00] text-lg"></iconify-icon> Dedicated engineering capacity
+              </li>
+              <li className="flex items-center gap-3 text-sm text-[#0A0A0A]">
+                <iconify-icon icon="solar:check-circle-linear" className="text-[#FF4D00] text-lg"></iconify-icon> Custom SLAs and priority support
+              </li>
+              <li className="flex items-center gap-3 text-sm text-[#0A0A0A]">
+                <iconify-icon icon="solar:check-circle-linear" className="text-[#FF4D00] text-lg"></iconify-icon> Security and compliance support
+              </li>
+              <li className="flex items-center gap-3 text-sm text-[#0A0A0A]">
+                <iconify-icon icon="solar:check-circle-linear" className="text-[#FF4D00] text-lg"></iconify-icon> Architecture review and roadmap
+              </li>
+              <li className="flex items-center gap-3 text-sm text-[#0A0A0A]">
+                <iconify-icon icon="solar:check-circle-linear" className="text-[#FF4D00] text-lg"></iconify-icon> Cross-system integration
+              </li>
+              <li className="flex items-center gap-3 text-sm text-[#0A0A0A]">
+                <iconify-icon icon="solar:check-circle-linear" className="text-[#FF4D00] text-lg"></iconify-icon> Phased rollout and change management
+              </li>
+              <li className="flex items-center gap-3 text-sm text-[#0A0A0A]">
+                <iconify-icon icon="solar:check-circle-linear" className="text-[#FF4D00] text-lg"></iconify-icon> Dedicated success contact
+              </li>
+            </ul>
+            <button onClick={openContactModal} className="block w-full py-4 min-h-[48px] border-2 border-black bg-white text-center text-sm font-bold text-black hover:bg-black hover:text-white transition-colors uppercase touch-manipulation">Get a Proposal</button>
           </div>
         </div>
 

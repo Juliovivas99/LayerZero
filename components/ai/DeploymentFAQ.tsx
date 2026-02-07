@@ -32,7 +32,7 @@ export default function DeploymentFAQ() {
     },
     {
       question: "What's the difference between your white-glove deployment and custom builds?",
-      answer: "White-glove deployment means we professionally install proven open-source AI systems (like OpenClaw, Ollama, LangChain agents) with standard integrations. It's fast (same-day) and cost-effective ($1,200+). Custom builds are bespoke systems we engineer from scratch for unique business logic, starting at $3,500. Most teams start with deployment for quick wins, then scale into custom builds for proprietary workflows."
+      answer: "White-glove deployment means we professionally install proven open-source AI systems (like OpenClaw, Ollama, LangChain agents) with standard integrations. It's fast (same-day) and cost-effective ($1,200+). Custom builds are bespoke systems we engineer from scratch for unique business logic, starting at $5,000. Most teams start with deployment for quick wins, then scale into custom builds for proprietary workflows."
     },
     {
       question: "Where does my data go?",

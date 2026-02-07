@@ -150,7 +150,7 @@ export default function ServicesComparison() {
 
             <div className="flex items-baseline gap-2 mb-4">
               <span className="text-xs font-mono text-[#F3F1ED]/60 uppercase">From</span>
-              <span className="text-3xl font-bold">$3,500</span>
+              <span className="text-3xl font-bold">$5,000</span>
               <span className="text-sm text-[#F3F1ED]/60">+ optional managed care</span>
             </div>
 
