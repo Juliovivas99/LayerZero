@@ -1,9 +1,31 @@
 'use client';
 
+import { useState } from 'react';
 import { useContactModal } from '@/components/ContactModalProvider';
+
+type CheckoutTier = 'build' | 'partnership' | null;
 
 export default function PricingSection() {
   const { openContactModal } = useContactModal();
+  const [checkoutLoading, setCheckoutLoading] = useState<CheckoutTier>(null);
+
+  async function goToCheckout(tier: 'build' | 'partnership') {
+    setCheckoutLoading(tier);
+    try {
+      const res = await fetch('/api/stripe/checkout', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ tier }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Checkout failed');
+      if (data.url) window.location.href = data.url;
+    } catch (err) {
+      console.error(err);
+      setCheckoutLoading(null);
+    }
+  }
+
   return (
     <section id="pricing" className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 md:px-12 bg-[#F3F1ED]">
         <div className="max-w-[1920px] mx-auto">
@@ -52,7 +74,13 @@ export default function PricingSection() {
                 <iconify-icon icon="solar:check-circle-bold" className="text-[#FF4D00] text-lg"></iconify-icon> 30-day hypercare
               </li>
             </ul>
-            <button onClick={openContactModal} className="block w-full py-4 min-h-[48px] bg-[#F3F1ED] text-center text-sm font-bold text-black hover:bg-white transition-colors uppercase touch-manipulation">Get Custom Quote</button>
+            <button
+              onClick={() => goToCheckout('build')}
+              disabled={checkoutLoading !== null}
+              className="block w-full py-4 min-h-[48px] bg-[#F3F1ED] text-center text-sm font-bold text-black hover:bg-white transition-colors uppercase touch-manipulation disabled:opacity-70 disabled:cursor-not-allowed"
+            >
+              {checkoutLoading === 'build' ? 'Redirecting…' : 'Get Custom Quote'}
+            </button>
           </div>
 
           {/* Tier 2: Partnership */}
@@ -92,7 +120,13 @@ export default function PricingSection() {
                 <iconify-icon icon="solar:check-circle-linear" className="text-[#FF4D00] text-lg"></iconify-icon> Dedicated Slack or channel
               </li>
             </ul>
-            <button onClick={openContactModal} className="block w-full py-4 min-h-[48px] border-2 border-black bg-white text-center text-sm font-bold text-black hover:bg-black hover:text-white transition-colors uppercase touch-manipulation">Apply for Partnership</button>
+            <button
+              onClick={() => goToCheckout('partnership')}
+              disabled={checkoutLoading !== null}
+              className="block w-full py-4 min-h-[48px] border-2 border-black bg-white text-center text-sm font-bold text-black hover:bg-black hover:text-white transition-colors uppercase touch-manipulation disabled:opacity-70 disabled:cursor-not-allowed"
+            >
+              {checkoutLoading === 'partnership' ? 'Redirecting…' : 'Apply for Partnership'}
+            </button>
           </div>
 
           {/* Tier 3: Enterprise / quote */}
