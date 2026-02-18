@@ -41,6 +41,8 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    // Use studiolabs0x@gmail.com as the default contact email
+    // Can be overridden with CONTACT_EMAIL environment variable if needed
     const contactEmail = process.env.CONTACT_EMAIL || 'studiolabs0x@gmail.com';
 
     // Send email using Resend
