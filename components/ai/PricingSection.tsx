@@ -1,30 +1,9 @@
 'use client';
 
-import { useState } from 'react';
 import { useContactModal } from '@/components/ContactModalProvider';
-
-type CheckoutTier = 'build' | 'partnership' | null;
 
 export default function PricingSection() {
   const { openContactModal } = useContactModal();
-  const [checkoutLoading, setCheckoutLoading] = useState<CheckoutTier>(null);
-
-  async function goToCheckout(tier: 'build' | 'partnership') {
-    setCheckoutLoading(tier);
-    try {
-      const res = await fetch('/api/stripe/checkout', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ tier }),
-      });
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.error || 'Checkout failed');
-      if (data.url) window.location.href = data.url;
-    } catch (err) {
-      console.error(err);
-      setCheckoutLoading(null);
-    }
-  }
 
   return (
     <section id="pricing" className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 md:px-12 bg-[#F3F1ED]">
@@ -46,7 +25,7 @@ export default function PricingSection() {
               <div className="text-xs font-mono text-[#FF4D00] mb-2 uppercase tracking-wider">Design + Build</div>
               <h3 className="text-3xl font-bold text-[#F3F1ED] mb-4">Autonomous Infrastructure Build</h3>
               <div className="flex items-baseline">
-                <span className="text-4xl font-bold text-[#F3F1ED]">$5,000</span>
+                <span className="text-4xl font-bold text-[#F3F1ED]">$10,000</span>
                 <span className="ml-2 text-sm text-[#F3F1ED]/70">start price</span>
               </div>
             </div>
@@ -75,11 +54,10 @@ export default function PricingSection() {
               </li>
             </ul>
             <button
-              onClick={() => goToCheckout('build')}
-              disabled={checkoutLoading !== null}
+              onClick={openContactModal}
               className="block w-full py-4 min-h-[48px] bg-[#F3F1ED] text-center text-sm font-bold text-black hover:bg-white transition-colors uppercase touch-manipulation disabled:opacity-70 disabled:cursor-not-allowed"
             >
-              {checkoutLoading === 'build' ? 'Redirecting…' : 'Get Custom Quote'}
+              Get Custom Quote
             </button>
           </div>
 
@@ -89,7 +67,7 @@ export default function PricingSection() {
               <div className="text-xs font-mono text-[#666666] mb-2 uppercase tracking-wider">Optimize</div>
               <h3 className="text-3xl font-bold text-[#0A0A0A] mb-4">Managed Momentum Partnership</h3>
               <div className="flex items-baseline">
-                <span className="text-4xl font-bold text-[#0A0A0A]">$7,500</span>
+                <span className="text-4xl font-bold text-[#0A0A0A]">$15,000</span>
                 <span className="ml-2 text-sm text-[#666666]">/month</span>
               </div>
             </div>
@@ -121,11 +99,10 @@ export default function PricingSection() {
               </li>
             </ul>
             <button
-              onClick={() => goToCheckout('partnership')}
-              disabled={checkoutLoading !== null}
-              className="block w-full py-4 min-h-[48px] border-2 border-black bg-white text-center text-sm font-bold text-black hover:bg-black hover:text-white transition-colors uppercase touch-manipulation disabled:opacity-70 disabled:cursor-not-allowed"
+              onClick={openContactModal}
+              className="block w-full py-4 min-h-[48px] border-2 border-black bg-white text-center text-sm font-bold text-black hover:bg-black hover:text-white transition-colors uppercase touch-manipulation"
             >
-              {checkoutLoading === 'partnership' ? 'Redirecting…' : 'Apply for Partnership'}
+              Apply for Partnership
             </button>
           </div>
 

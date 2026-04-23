@@ -110,7 +110,7 @@ export default function EnterpriseDeployment() {
               <div className="absolute -top-3 left-6 bg-[#f97316] text-white text-xs font-bold px-3 py-1 uppercase">Miami</div>
               <h4 className="text-2xl font-bold mb-3 mt-2">In-Person Setup</h4>
               <p className="text-sm text-[#666666] mb-6">We come to your office. First system + hardening + 14-day hypercare.</p>
-              <div className="text-4xl font-bold mb-6">$2,400</div>
+              <div className="text-4xl font-bold mb-6">$4,800</div>
               <ul className="space-y-2 text-sm mb-6">
                 <li className="flex items-center gap-2">
                   <iconify-icon icon="solar:check-circle-linear" className="text-[#f97316]"></iconify-icon>
@@ -136,7 +136,7 @@ export default function EnterpriseDeployment() {
             <div className="bg-white border-2 border-black p-6 text-[#0A0A0A] transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-black/20 hover:-translate-y-2 hover:border-[#f97316]">
               <h4 className="text-2xl font-bold mb-3">Remote Setup</h4>
               <p className="text-sm text-[#666666] mb-6">Deploy over video call on your hardware or VPS. Available worldwide.</p>
-              <div className="text-4xl font-bold mb-6">$1,200</div>
+              <div className="text-4xl font-bold mb-6">$2,400</div>
               <ul className="space-y-2 text-sm mb-6">
                 <li className="flex items-center gap-2">
                   <iconify-icon icon="solar:check-circle-linear" className="text-[#f97316]"></iconify-icon>
@@ -162,7 +162,7 @@ export default function EnterpriseDeployment() {
             <div className="bg-white border-2 border-black p-6 text-[#0A0A0A] transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-black/20 hover:-translate-y-2 hover:border-[#f97316]">
               <h4 className="text-2xl font-bold mb-3">Additional Systems</h4>
               <p className="text-sm text-[#666666] mb-6">Deploy your full exec team or multiple AI infrastructures.</p>
-              <div className="text-4xl font-bold mb-6">+$1,200<span className="text-base font-normal text-[#666666]">/ea</span></div>
+              <div className="text-4xl font-bold mb-6">+$2,400<span className="text-base font-normal text-[#666666]">/ea</span></div>
               <ul className="space-y-2 text-sm mb-6">
                 <li className="flex items-center gap-2">
                   <iconify-icon icon="solar:check-circle-linear" className="text-[#f97316]"></iconify-icon>
@@ -201,7 +201,7 @@ export default function EnterpriseDeployment() {
                 <div className="text-xs font-mono text-[#f97316] mb-2 uppercase tracking-wider">Standard</div>
                 <h4 className="text-2xl font-bold mb-4">Care Standard</h4>
                 <div className="flex items-baseline">
-                  <span className="text-3xl font-bold">$1,875</span>
+                  <span className="text-3xl font-bold">$3,750</span>
                   <span className="ml-2 text-sm text-[#F3F1ED]/60">/month</span>
                 </div>
               </div>
@@ -233,7 +233,7 @@ export default function EnterpriseDeployment() {
                 <div className="text-xs font-mono text-[#f97316] mb-2 uppercase tracking-wider">Plus</div>
                 <h4 className="text-2xl font-bold mb-4">Care Plus</h4>
                 <div className="flex items-baseline">
-                  <span className="text-3xl font-bold">$3,750</span>
+                  <span className="text-3xl font-bold">$7,500</span>
                   <span className="ml-2 text-sm text-[#666666]">/month</span>
                 </div>
               </div>
@@ -264,7 +264,7 @@ export default function EnterpriseDeployment() {
                 <div className="text-xs font-mono text-[#f97316] mb-2 uppercase tracking-wider">Enterprise</div>
                 <h4 className="text-2xl font-bold mb-4">Care Enterprise</h4>
                 <div className="flex items-baseline">
-                  <span className="text-3xl font-bold">$7,500+</span>
+                  <span className="text-3xl font-bold">$15,000+</span>
                   <span className="ml-2 text-sm text-[#F3F1ED]/60">/month</span>
                 </div>
               </div>

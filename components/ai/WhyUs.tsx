@@ -68,7 +68,7 @@ export default function WhyUs() {
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-green-400 mt-1">✓</span>
-                <span className="text-[#F3F1ED]/80">Optional managed care ($1,875+/mo)</span>
+                <span className="text-[#F3F1ED]/80">Optional managed care ($3,750+/mo)</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-green-400 mt-1">✓</span>
@@ -93,7 +93,7 @@ export default function WhyUs() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2">
                 <span className="text-red-500 mt-1">✗</span>
-                <span className="text-[#666666]">$50k-200k+ for &quot;discovery&quot;</span>
+                <span className="text-[#666666]">$100k-400k+ for &quot;discovery&quot;</span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-red-500 mt-1">✗</span>

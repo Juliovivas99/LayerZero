@@ -24,15 +24,15 @@ export default function DeploymentFAQ() {
     },
     {
       question: "Do you offer support after deployment?",
-      answer: "Every deployment includes 14-day hypercare (white-glove) or 30-day hypercare (custom builds) via a dedicated Slack Connect channel. For ongoing monitoring, security updates, workflow optimization, and support, we offer Managed Care plans starting at $1,875/month. This includes health monitoring, security patches, engineering hours, and priority support."
+      answer: "Every deployment includes 14-day hypercare (white-glove) or 30-day hypercare (custom builds) via a dedicated Slack Connect channel. For ongoing monitoring, security updates, workflow optimization, and support, we offer Managed Care plans starting at $3,750/month. This includes health monitoring, security patches, engineering hours, and priority support."
     },
     {
       question: "Can you deploy multiple agents or systems?",
-      answer: "Yes—this is common for teams with 4-50 employees. We help you decide which roles need their own agent (CEO, CFO, Head of Sales) versus shared workflows. Each additional system is +$1,200. Most companies deploy 2-6 executive agents plus one local LLM infrastructure. We also handle multi-agent deployments where different agents specialize in different tasks."
+      answer: "Yes—this is common for teams with 4-50 employees. We help you decide which roles need their own agent (CEO, CFO, Head of Sales) versus shared workflows. Each additional system is +$2,400. Most companies deploy 2-6 executive agents plus one local LLM infrastructure. We also handle multi-agent deployments where different agents specialize in different tasks."
     },
     {
       question: "What's the difference between your white-glove deployment and custom builds?",
-      answer: "White-glove deployment means we professionally install proven open-source AI systems (like OpenClaw, Ollama, LangChain agents) with standard integrations. It's fast (same-day) and cost-effective ($1,200+). Custom builds are bespoke systems we engineer from scratch for unique business logic, starting at $5,000. Most teams start with deployment for quick wins, then scale into custom builds for proprietary workflows."
+      answer: "White-glove deployment means we professionally install proven open-source AI systems (like OpenClaw, Ollama, LangChain agents) with standard integrations. It's fast (same-day) and cost-effective ($2,400+). Custom builds are bespoke systems we engineer from scratch for unique business logic, starting at $10,000. Most teams start with deployment for quick wins, then scale into custom builds for proprietary workflows."
     },
     {
       question: "Where does my data go?",
