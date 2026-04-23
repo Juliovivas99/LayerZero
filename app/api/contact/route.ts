@@ -42,9 +42,9 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Use julio@layerzero.studio as the default contact email
+    // Use studiolabs0x@gmail.com as the default contact email
     // Can be overridden with CONTACT_EMAIL environment variable if needed
-    const contactEmail = process.env.CONTACT_EMAIL || 'julio@layerzero.studio';
+    const contactEmail = process.env.CONTACT_EMAIL || 'studiolabs0x@gmail.com';
 
     // Send email using Resend
     const { data, error } = await resend.emails.send({
