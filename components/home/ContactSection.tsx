@@ -39,8 +39,8 @@ export default function ContactSection() {
           </div>
           
           <div className="flex flex-col gap-2">
-            <a href="mailto:studiolabs0x@gmail.com" className="text-xl font-mono hover:text-[#FF4D00] transition-colors flex items-center gap-3">
-              studiolabs0x@gmail.com
+            <a href="mailto:julio@layerzero.studio" className="text-xl font-mono hover:text-[#FF4D00] transition-colors flex items-center gap-3">
+              julio@layerzero.studio
               <iconify-icon icon="solar:arrow-right-up-linear"></iconify-icon>
             </a>
           </div>

@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import type { NavLink } from '@/types';
@@ -42,7 +43,15 @@ export default function Navigation({ variant = 'home' }: NavigationProps) {
           <div className="flex items-center gap-4 md:gap-6">
             {/* Logo */}
             <Link href="/" className="text-lg sm:text-xl font-bold tracking-tighter uppercase leading-none hover:opacity-80 transition-opacity z-50">
-              Layer Zero<br />Studio
+              <span className="sr-only">Layer Zero Studio</span>
+              <Image
+                src="/logo.svg"
+                alt=""
+                width={220}
+                height={56}
+                priority
+                className="h-9 w-auto sm:h-10"
+              />
             </Link>
 
             {/* Desktop Links in Glass Pill */}

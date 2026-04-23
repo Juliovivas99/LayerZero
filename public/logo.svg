@@ -1,0 +1,15 @@
+<svg width="440" height="120" viewBox="0 0 440 120" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .logo-text {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 38px;
+      font-weight: 800;
+      letter-spacing: -2px;
+      text-transform: uppercase;
+      fill: #000;
+    }
+  </style>
+
+  <text x="0" y="40" class="logo-text">Layer Zero</text>
+  <text x="0" y="80" class="logo-text">Studio</text>
+</svg>
