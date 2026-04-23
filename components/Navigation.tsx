@@ -22,7 +22,7 @@ export default function Navigation({ variant = 'home' }: NavigationProps) {
   ];
 
   const aiLinks: NavLink[] = [
-    { label: 'Deployment', href: '/deployment' },
+    { label: 'Fast Track', href: '/deployment' },
     { label: 'Custom Builds', href: '/custom-builds' },
     { label: 'FAQ', href: '/faq' },
   ];
