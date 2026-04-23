@@ -1,13 +1,17 @@
 import { NextRequest, NextResponse } from 'next/server';
 import Stripe from 'stripe';
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
-
 const VALID_TIERS = ['build', 'partnership'] as const;
 type Tier = (typeof VALID_TIERS)[number];
 
 function isTier(value: unknown): value is Tier {
   return typeof value === 'string' && VALID_TIERS.includes(value as Tier);
+}
+
+function getStripeClient(): Stripe | null {
+  const key = process.env.STRIPE_SECRET_KEY;
+  if (!key) return null;
+  return new Stripe(key);
 }
 
 export async function POST(request: NextRequest) {
@@ -26,7 +30,8 @@ export async function POST(request: NextRequest) {
     const pricePartnership = process.env.STRIPE_PRICE_PARTNERSHIP;
     const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
 
-    if (!process.env.STRIPE_SECRET_KEY) {
+    const stripe = getStripeClient();
+    if (!stripe) {
       return NextResponse.json(
         { error: 'Stripe is not configured.' },
         { status: 500 }
